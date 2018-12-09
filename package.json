@@ -12,6 +12,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "test:coverage": "npm test -- --coverage",
+    "start:selenium": "selenium-standalone start > /dev/null 2>&1 &",
+    "kill:selenium": "lsof -t -i :4444 | xargs kill",
+    "fn": "npm run start:selenium && codeceptjs run --steps",
     "eject": "react-scripts eject",
     "lint": "standard --fix | snazzy"
   },
@@ -25,11 +28,12 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "snazzy": "7.1.1",
-    "standard": "11.0.1",
+    "codeceptjs": "^1.4.6",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
-    "enzyme-to-json": "^3.3.5"
+    "enzyme-to-json": "^3.3.5",
+    "snazzy": "7.1.1",
+    "standard": "11.0.1"
   },
   "jest": {
     "snapshotSerializers": [
@@ -45,6 +49,10 @@
       "browser": true,
       "jest": true
     },
-    "parser": "babel-eslint"
+    "parser": "babel-eslint",
+    "globals": [
+      "Feature",
+      "Scenario"
+    ]
   }
 }
