@@ -1,25 +1,25 @@
 import React, { Component } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import Calculate from './Component/Calculate'
 
 class App extends Component {
+  constructor () {
+    super()
+    this.state = {
+      price: 0
+    }
+  }
+
+  handleChange = event => this.setState({price: event.target.value})
+
+  handleClick = () => this.setState({price: this.state.price / 2})
+
   render () {
     return (
       <div className='App'>
-        <header className='App-header'>
-          <img src={logo} className='App-logo' alt='logo' />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className='App-link'
-            href='https://reactjs.org'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            Learn React 123
-          </a>
-        </header>
+        <Calculate
+          price={this.state.price}
+          handleChange={this.handleChange}
+          handleClick={this.handleClick} />
       </div>
     )
   }
