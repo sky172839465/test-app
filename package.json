@@ -11,7 +11,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test::unit": "CI=true react-scripts test --coverage --env=jsdom",
-    "test::e2e": "npm run start:selenium && codeceptjs run --steps",
+    "test::e2e": "npm run start:selenium && codeceptjs run --steps --config=codecept.config.js",
     "start:selenium": "selenium-standalone start > /dev/null 2>&1 &",
     "kill:selenium": "lsof -t -i :4444 | xargs kill",
     "deploy::beta": "npm run build && cp CNAME build/CNAME && surge ./build && npm run delete::build",

@@ -1,7 +1,7 @@
 Feature('My First Test')
 
 Scenario('test something', (I) => {
-  I.amOnPage('https://github.com')
-  I.see('GitHub')
+  I.amOnPage('/')
+  I.see('Hello world')
   I.wait(1)
 })

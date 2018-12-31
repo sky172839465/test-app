@@ -1,5 +1,7 @@
 [![Build Status][travis-image]][travis-url]
 [![Coverage Status][codecov-image]][codecov-url]
+[![JavaScript Style Guide][standard-image]][standard-url]
+
 
 ## test app
 
@@ -7,3 +9,5 @@
 [travis-url]: https://travis-ci.org/sky172839465/test-app
 [codecov-image]: https://img.shields.io/codecov/c/github/sky172839465/test-app.svg
 [codecov-url]: https://codecov.io/gh/sky172839465/test-app
+[standard-image]: https://img.shields.io/badge/code_style-standard-brightgreen.svg
+[standard-url]: https://standardjs.com
