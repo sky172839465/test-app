@@ -31,6 +31,7 @@
   ],
   "devDependencies": {
     "codeceptjs": "^1.4.6",
+    "codecov": "^3.1.0",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
     "enzyme-to-json": "^3.3.5",
@@ -43,7 +44,10 @@
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ],
-    "coverageReporters": ["text"]
+    "coverageReporters": [
+      "text",
+      "json"
+    ]
   },
   "standard": {
     "ignore": [
