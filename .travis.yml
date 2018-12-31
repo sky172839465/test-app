@@ -8,7 +8,7 @@ install:
   - npm install
 script:
   - npm run lint
-  - npm run test:coverage
+  - npm run test::unit
   - npm run build
 deploy:
   provider: surge

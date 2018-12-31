@@ -10,9 +10,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test::unit": "CI=true react-scripts test",
+    "test::unit": "CI=true react-scripts test --coverage --env=jsdom",
     "test::e2e": "npm run start:selenium && codeceptjs run --steps",
-    "test:coverage": "npm test -- --coverage",
     "start:selenium": "selenium-standalone start > /dev/null 2>&1 &",
     "kill:selenium": "lsof -t -i :4444 | xargs kill",
     "deploy::beta": "npm run build && cp CNAME build/CNAME && surge ./build && npm run delete::build",
@@ -43,7 +42,8 @@
   "jest": {
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
-    ]
+    ],
+    "coverageReporters": ["text"]
   },
   "standard": {
     "ignore": [
