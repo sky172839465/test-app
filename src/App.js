@@ -17,6 +17,7 @@ class App extends Component {
     return (
       <div className='App'>
         <p>Hello world 123</p>
+        <p>Hello 2019</p>
         <Calculate
           price={this.state.price}
           handleChange={this.handleChange}
