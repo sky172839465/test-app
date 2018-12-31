@@ -18,6 +18,7 @@ class App extends Component {
       <div className='App'>
         <p>Goodbye 2018</p>
         <p>Hello 2019</p>
+        <p>new text</p>
         <Calculate
           price={this.state.price}
           handleChange={this.handleChange}
