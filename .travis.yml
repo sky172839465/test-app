@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+  - "stable"
+cache:
+  directories:
+    - node_modules
+script:
+  - npm run lint
+  - npm run test
+  - npm run build
+deploy:
+  provider: surge
+  skip_cleanup: true
+  domain: sky172839465.surge.sh
+  project: ./build/
+on:
+  branch: master

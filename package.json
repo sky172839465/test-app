@@ -10,11 +10,14 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test::unit": "CI=true react-scripts test",
+    "test::e2e": "npm run start:selenium && codeceptjs run --steps",
     "test:coverage": "npm test -- --coverage",
     "start:selenium": "selenium-standalone start > /dev/null 2>&1 &",
     "kill:selenium": "lsof -t -i :4444 | xargs kill",
-    "fn": "npm run start:selenium && codeceptjs run --steps",
+    "deploy::beta": "npm run build && cp CNAME build/CNAME && surge ./build && npm run delete::build",
+    "deploy::prod": "npm run build && gh-pages -d build && npm run delete::build",
+    "delete::build": "rm -r build",
     "eject": "react-scripts eject",
     "lint": "standard --fix | snazzy"
   },
@@ -32,8 +35,10 @@
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
     "enzyme-to-json": "^3.3.5",
+    "gh-pages": "^2.0.1",
     "snazzy": "7.1.1",
-    "standard": "11.0.1"
+    "standard": "11.0.1",
+    "surge": "^0.20.1"
   },
   "jest": {
     "snapshotSerializers": [
