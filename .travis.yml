@@ -18,8 +18,9 @@ script:
 deploy:
   provider: pages
   skip-cleanup: true
-  github-token: $GH_PAGE_TOKEN  # Set in the settings page of your repository, as a secure variable
-  keep-history: true
+  github-token: $GH_PAGE_TOKEN
+  local-dir: "./build/"
+  keep-history: false
   on:
     branch: master
 true:
