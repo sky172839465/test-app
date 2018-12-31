@@ -18,13 +18,9 @@ script:
 deploy:
   provider: pages
   skip-cleanup: true
-  github-token: $GH_PAGE_TOKEN
-  local-dir: "./build/"
-  keep-history: false
+  github-token: $GITHUB_TOKEN
+  local-dir: build
   on:
     branch: master
 true:
   branch: master
-env:
-  global:
-    secure: RTzGZEEnojQx7dr9MG0ErDwDVMnrv9ArfTYEx1jWaO6gxQsO5qx6RaJiK012UVZjmsxsEPu7mFnPQtpuM6D1reJaME4+GXCCB+kyWxsDv+D5ar64nr4aeThMLQQeNbeW9jmAHjNKSyy6epzUvZs8bJhAFb10WgRhIWm0PmD2FHN169NxpeMNWdUAf4E87B3G9WTA38zbUOxhf7IdjR2mhIzqd3PAg02KR+EH8Hx/yuYjthMWstBap5iGYqpkheT+4Fv09W1fE0SaGXl1+AW6DU2kRTgEE+3kJclvu2N8KJ0ADiR/rhBEp4QBHmK6JF/Rni6XWUXHbIzU06ncy/ND8XqARLDTgtjm5Dxg1pbEvdbUPMB3TtVUoHw4UEsxQ/ippkk7DdAfEoALmDtJZ5Nwlyy3VZ2PccN8Q58ykhXhgsP/E9HjHZ14csuUxgc5UERa/kOjxO5UgtDxubeALIYqURByMp+tgKN0SrBxZVdzJ0qARAgPvMVlNV7natp4SRMoAH6fgMTuZ50SSCrxd0IpJwYSDzRyz/kWNkLNkYJay7BViCPphsjWWIeBygVDbCfa+7SwC820htDQ5dhVlzoDAOi6l/SIWINXDE/tr676glbhoJ2NSIEs07W3voScvSkvsV+xuWfKOpNj8lvx5HbkwRA9Qf0iWs9lc8rbf0uGGkM=
