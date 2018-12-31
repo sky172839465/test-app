@@ -1,5 +1,6 @@
 {
   "name": "test-app",
+  "homepage": "https://sky172839465.github.io/test-app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
