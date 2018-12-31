@@ -16,7 +16,7 @@ class App extends Component {
   render () {
     return (
       <div className='App'>
-        <p>Hello world 123</p>
+        <p>Goodbye 2018</p>
         <p>Hello 2019</p>
         <Calculate
           price={this.state.price}
