@@ -44,6 +44,11 @@
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ],
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/__e2e__/**/*",
+      "!src/(App|index|serviceWorker|setupTests).js"
+    ],
     "coverageReporters": [
       "text",
       "lcov"
