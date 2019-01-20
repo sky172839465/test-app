@@ -1,6 +1,6 @@
 # test app
 
-<!--[![FOSSA Status][fossa-status-image]][fossa-status-url]-->
+[![FOSSA Status][fossa-status-image]][fossa-status-url]
 [![Build Status][travis-image]][travis-url]
 [![Coverage Status][codecov-image]][codecov-url]
 [![JavaScript Style Guide][standard-image]][standard-url]
@@ -10,6 +10,8 @@
 ### Compatibility
 [![Browserstack Logo][browserstack-logo-image]][browserstack-url]
 
+
+<!-- link source -->
 [fossa-status-image]: https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsky172839465%2Ftest-app.svg?type=shield
 [fossa-status-url]: https://app.fossa.io/projects/git%2Bgithub.com%2Fsky172839465%2Ftest-app?ref=badge_shield
 [travis-image]: https://img.shields.io/travis/sky172839465/test-app.svg
