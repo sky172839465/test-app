@@ -12,7 +12,7 @@ cache:
 install:
   - npm install
 before_deploy:
-  - npm run lint
+  - if npm run  npm run lint; then echo '💯 Lint perfect'; else echo '⁉️ Lint get error please run `npm run lint` check again';exit 1; fi
   - if npm run test::unit; then echo '✅ Unit test run success'; else echo '❌ Unit test run failure';exit 1; fi && codecov
   - npm run build
 deploy:
@@ -23,6 +23,6 @@ deploy:
   on:
     branch: master
 after_deploy:
-  - if npm run functional::browserstack; then echo '✅ Functional test run success'; else echo '❌ Functional test run failure';exit 1; fi
+  - if npm run functional::browserstack; then echo '🎊 🎉 Functional test run success'; else echo '💔🧨 Functional test run failure';exit 1; fi
 true:
   branch: master
