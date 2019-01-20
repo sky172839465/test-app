@@ -1,6 +1,10 @@
 language: node_js
 node_js:
 - stable
+addons:
+  browserstack:
+    username: $BS_USER
+    access_key: $BS_KEY
 cache:
   directories:
   - node_modules
