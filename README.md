@@ -6,6 +6,7 @@
 [![JavaScript Style Guide][standard-image]][standard-url]
 [![Dependency Status][david-dm-image]][david-dm-url]
 [![devDependency Status][david-dm-dev-image]][david-dm-dev-url]
+[![HitCount][hit-count-image]][hit-count-url]
 
 ### Compatibility
 [![Browserstack Logo][browserstack-logo-image]][browserstack-url]
@@ -24,5 +25,7 @@
 [david-dm-url]: https://david-dm.org/sky172839465/test-app
 [david-dm-dev-image]: https://david-dm.org/sky172839465/test-app/dev-status.svg
 [david-dm-dev-url]: https://david-dm.org/sky172839465/test-app#info=devDependencies
+[hit-count-image]: http://hits.dwyl.io/sky172839465/test-app.svg
+[hit-count-url]: http://hits.dwyl.io/sky172839465/test-app
 [browserstack-logo-image]: https://user-images.githubusercontent.com/9082423/51435153-bac57980-1cab-11e9-9024-6ccc39123f7e.png
 [browserstack-url]: https://www.browserstack.com/
