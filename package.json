@@ -39,6 +39,7 @@
     "enzyme-adapter-react-16": "^1.7.0",
     "enzyme-to-json": "^3.3.5",
     "gh-pages": "^2.0.1",
+    "selenium-standalone": "^6.15.4",
     "snazzy": "7.1.1",
     "standard": "11.0.1",
     "surge": "^0.20.1",
