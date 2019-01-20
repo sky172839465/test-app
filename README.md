@@ -6,7 +6,6 @@
 [![JavaScript Style Guide][standard-image]][standard-url]
 [![Dependency Status][david-dm-image]][david-dm-url]
 [![devDependency Status][david-dm-dev-image]][david-dm-dev-url]
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsky172839465%2Ftest-app.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fsky172839465%2Ftest-app?ref=badge_shield)
 
 ### Compatibility
 [![Browserstack Logo][browserstack-logo-image]][browserstack-url]
