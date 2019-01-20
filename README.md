@@ -3,9 +3,9 @@
 [![FOSSA Status][fossa-status-image]][fossa-status-url]
 [![Build Status][travis-image]][travis-url]
 [![BrowserStack Status][browser-stack-status-image]][browser-stack-status-url]
-
 [![Coverage Status][codecov-image]][codecov-url]
-[![JavaScript Style Guide][standard-image]][standard-url]
+[![JavaScript Style Guide][standard-image]][standard-url]  
+
 [![Dependency Status][david-dm-image]][david-dm-url]
 [![devDependency Status][david-dm-dev-image]][david-dm-dev-url]
 <!--[![HitCount][hit-count-image]][hit-count-url]-->
