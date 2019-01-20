@@ -13,7 +13,7 @@ install:
   - npm install
 before_deploy:
   - npm run lint
-  - npm run test::unit && codecov
+  - if npm run test::unit; then echo '✅ Unit test run success'; else echo '❌ Unit test run failure';exit 1; fi && codecov
   - npm run build
 deploy:
   provider: pages
@@ -23,6 +23,6 @@ deploy:
   on:
     branch: master
 after_deploy:
-  - npm run functional::browserstack
+  - if npm run functional::browserstack; then echo '✅ Functional test run success'; else echo '❌ Functional test run failure';exit 1; fi
 true:
   branch: master
