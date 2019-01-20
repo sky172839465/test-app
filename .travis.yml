@@ -1,15 +1,15 @@
 language: node_js
 node_js:
-- stable
+  - stable
 addons:
   browserstack:
-    username: $BS_USER
-    access_key: $BS_KEY
+    username: "f1fyWcjKPtRwmXvdJwow/UmaH/+1x2/i6PJOmecM4fCIhiNjYiAcU3GhutmmPM3GcAXc63b+pyF8fK4X0XfXCh22kfBltOFrQgA7kwfKmHnKvvsBiOHRrtJCQeK/7rQvCSkk4MeWKTqDjv+9Fe59Du5ekSsoowRV2H8LKqWHqivbMX27faimPfBMuLoyFFr2tBmT+cXpVNQxF8hEpoCNZaOzOZ7M2SosRX551cH9DCHt72bHliFknHV7JYYolx6z2IJj3rmnf3aXdyDgaoVlzNyDwyZXqG3lpMJE/mZ4CO10WDRCjSxmw1PbpouVl6YTdY7hIAeoGKt7+5I6Fp/zrjhhOkPvXcegbDSddFmJUYIYWny9TE5WAEQGMTUhIxOnxmrZWdbPi28nlYPbFtnUPBBOnKIZem4t/QQ19C3Xm48JXxkGPAlKonEdoaqwx7L2PA117GySuijBLSLB1cXCSAm7GWApBrtd/auUXMMU5fhowxfoq1C6hOL7EGEzS0NBFJIp/c7Z/fHDXngGeUJm32jqTE0z56yMZjBohFSjnsQWopjqKJC2THJCjLiCdFKPf00vKpoI4g5SL07hig9LrmrsDVTfXXWCq2PXOS6ngEy5yTJXTZaqwlm2ES+fXkBex1XPNGlbm29jrMGMoNRH+ap2fO/huLFVwKBP5Kwd/04="
+    access_key: "UoAQDbnB9s9NdT2ciqBhr+d8+f5iG68dQwSJtKXMWneEdrceGbTHquriEfsKyR0HRaAvud19uGrKMbBMkEsnhQrsvJLVyuDEwG2GiB2KCGJEGoE5W9sSy1fyeSNGxprq+OheW3ry+fb1rk5xFiUwy6c1CO6Oshgeq/LnPPLBplQh+16IDnILDLtj/5VmtvZEyd0ilRhLQkAtJDnJU30nCjf7jkePnPXKraRQ9SfYCkiv/Y+Twd+27Qi0eGtx2xadvGWZwxFDCNHKYYWVh4QVZsaVmzmshoiemdrCTe8rlJwngQ7+NlpQmmx9zgZb6MV9S6IXeYlExRCxUJdvssTVfgnXk89hyRilV0yZoBjBNERM/rfOKHAylWRW0ZPv+kflQbQTKHGwd7SI9UCcy79nKhjpw2PFYWYpeHszuQITRZr0yo+Mc0MWTTShNaH4spVPsjkW7med5cAUTls6gvn+VYaJaxwwbqO94P3r7FedKBEgrYHgKXGbLukXB/6P6h2aORr4+9TC65+YkVvXutjHPPNY956lzzO5bmFZDElGJS9BvtUxq8d6yIfbTHp7rLQwDqN4wJIgRABlVib2t/ud+UYtmvJMdFUPGNftJPWeHK/upENjl4/zITIa3FtHVAiCW+qbDYMCZNS95zKob4jGF1+WE9TJwukKGJXgduTb97o="
 cache:
   directories:
-  - node_modules
+    - node_modules
 install:
-- npm install
+  - npm install
 before_deploy:
   - npm run lint
   - npm run test::unit && codecov
@@ -17,7 +17,7 @@ before_deploy:
 deploy:
   provider: pages
   skip-cleanup: true
-  github-token: $GITHUB_TOKEN
+  github-token: "$GITHUB_TOKEN"
   local-dir: build
   on:
     branch: master
