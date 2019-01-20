@@ -4,7 +4,7 @@ const startTime = `${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`
 const {
   BS_USER,
   BS_KEY,
-  BASE_URL,
+  BASE_URL = 'https://sky172839465.github.io/test-app',
   TRAVIS_BUILD_NUMBER = `local ${startDate} ${startTime}`,
   TRAVIS_JOB_NUMBER = '',
   IS_TEST_LOCAL = false
