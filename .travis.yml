@@ -6,15 +6,10 @@ cache:
   - node_modules
 install:
 - npm install
-script:
-- npm run lint
-- npm run test::unit && codecov
-- npm run build
-# deploy:
-#   provider: surge
-#   skip_cleanup: true
-#   domain: sky172839465.surge.sh
-#   project: "./build/"
+before_deploy:
+  - npm run lint
+  - npm run test::unit && codecov
+  - npm run build
 deploy:
   provider: pages
   skip-cleanup: true
@@ -22,5 +17,7 @@ deploy:
   local-dir: build
   on:
     branch: master
+after_deploy:
+  - npm run functional::browserstack
 true:
   branch: master
