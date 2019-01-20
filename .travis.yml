@@ -5,7 +5,7 @@ addons:
   browserstack:
     username: "yusonghsu1"
     access_key: 
-      secure: "$BS_KEY"
+      secure: "UC5Ftl61/NUKzypxKe3foyyI04G+FCeqeLZQn7sTQ/9R/ygeeAEDeP8Q9GJrY0eCdsg2w30rvpAvICJ/E/aOxdu9zpD+3b++JEqCVV7ADflknjJAKUIY1aJHrLWMFWZutQxcUp+Whv+YSuKh+M5XDAEKywFuL7n1dPe3B39ydDJoNEwk1FurixrfK8FMzTyue4iGtQjiYiP8W9oA/1bubWAnI8P5wSKvjny+OODS4b/ZMdSp4+cX7QSnI90KribJXllgoCqU8lbGC0PmIzeczuxuE9DtHGvJtyd60vjTaGkAiPoT0+FVLkgUONbTmdO84fe9rAT/E3Vp0mYq1lao/EUVbpvY2nA7TW45+SQe5kbr/97W+7V0VU9ymR/sJ9qKD3qj61r4cs8/bQCwQHMJjfma3jUaRpgnAmOvnmbO5i81nTkAdQgMDSmDT5Jy3SUKnS7X0jw7TcngnmGO5+N2Vmr5jGP9Cg4hUHevWFiP/6NeOUd0zUxfFfqr1tsT7tZtYYOIQaaFyc4qgdRw1y1JnG44vGhHBvQqVimpMrqUFM3rAhYjGHfS9S23eLBXMb0/5WLlWvDW2sdJp9uMeIyXgKR5w8PcvPmlhMeJNlNPg0Nnnblfj9XedN/WCxskh5jAcx1s828wn49FtgUjjgPYkarKt2oc4Bcaht/JRV3a3QQ="
 cache:
   directories:
     - node_modules
