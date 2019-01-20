@@ -14,7 +14,7 @@ install:
 before_deploy:
   - if npm run lint; then echo '💯 Lint perfect'; else echo '⁉️ Lint get error please run `npm run lint` check again';exit 1; fi
   - if npm run test::unit; then echo '✅ Unit test run success'; else echo '❌ Unit test run failure';exit 1; fi && codecov
-  - if npm run build; then echo '😏 Build success'; else echo '😨 Build failure';exit 1; fi &&
+  - if npm run build; then echo '😏 Build success'; else echo '😨 Build failure';exit 1; fi
 deploy:
   provider: pages
   skip-cleanup: true
