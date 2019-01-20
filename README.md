@@ -6,7 +6,7 @@
 [![JavaScript Style Guide][standard-image]][standard-url]
 [![Dependency Status][david-dm-image]][david-dm-url]
 [![devDependency Status][david-dm-dev-image]][david-dm-dev-url]
-[![HitCount][hit-count-image]][hit-count-url]
+<!--[![HitCount][hit-count-image]][hit-count-url]-->
 
 ### Compatibility
 [![Browserstack Logo][browserstack-logo-image]][browserstack-url]
