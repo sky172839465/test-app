@@ -17,7 +17,6 @@
     "functional::browserstack:local": "export IS_TEST_LOCAL=true; npm run functional::browserstack",
     "start:selenium": "selenium-standalone start > /dev/null 2>&1 &",
     "kill:selenium": "lsof -t -i :4444 | xargs kill",
-    "deploy::beta": "npm run build && cp CNAME build/CNAME && surge ./build && npm run delete::build",
     "deploy::prod": "npm run build && gh-pages -d build && npm run delete::build",
     "delete::build": "rm -r build",
     "eject": "react-scripts eject",
@@ -42,7 +41,6 @@
     "selenium-standalone": "^6.15.4",
     "snazzy": "7.1.1",
     "standard": "11.0.1",
-    "surge": "^0.20.1",
     "webdriverio": "^4.14.1"
   },
   "jest": {
