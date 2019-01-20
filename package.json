@@ -13,7 +13,7 @@
     "build": "react-scripts build",
     "test::unit": "CI=true react-scripts test --coverage --env=jsdom",
     "functional::local": "npm run start:selenium && codeceptjs run --steps --config=./codecept/local.config.js",
-    "functional::browserstack:online": "npm run start:selenium && codeceptjs run --steps --config=./codecept/bs.config.js",
+    "functional::browserstack": "npm run start:selenium && codeceptjs run --steps --config=./codecept/bs.config.js",
     "functional::browserstack:local": "export IS_TEST_LOCAL=true; npm run functional::browserstack",
     "start:selenium": "selenium-standalone start > /dev/null 2>&1 &",
     "kill:selenium": "lsof -t -i :4444 | xargs kill",

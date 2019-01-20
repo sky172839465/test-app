@@ -24,6 +24,6 @@ deploy:
 after_deploy:
   - selenium-standalone install
   - selenium-standalone start &
-  - npm run functional::browserstack:online
+  - npm run functional::browserstack
 true:
   branch: master
