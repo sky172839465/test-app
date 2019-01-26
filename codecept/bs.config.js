@@ -62,7 +62,6 @@ exports.config = {
       url: BASE_URL,
       user: BS_USER,
       key: BS_KEY,
-      host: `${BS_USER}:${BS_KEY}@hub.browserstack.com`,
       desiredCapabilities: {
         os: 'Windows',
         os_version: '10',
