@@ -1,29 +1,26 @@
 import React, { Component } from 'react'
-import Calculate from './Component/Calculate'
+import { HashRouter, Switch, Route, Redirect } from 'react-router-dom'
+import routeConfig from './routeConfig'
+import AppHeader from './component/Common/AppHeader'
+import NoFoundPage from './component/Page/NotFound'
 
 class App extends Component {
-  constructor () {
-    super()
-    this.state = {
-      price: 0
-    }
-  }
-
-  handleChange = event => this.setState({price: event.target.value})
-
-  handleClick = () => this.setState({price: this.state.price / 2})
-
   render () {
     return (
-      <div className='App'>
-        <p>Goodbye 2018</p>
-        <p>Hello 2019</p>
-        <p>new text</p>
-        <Calculate
-          price={this.state.price}
-          handleChange={this.handleChange}
-          handleClick={this.handleClick} />
-      </div>
+      <HashRouter>
+        <div className='App'>
+          <AppHeader />
+          <main>
+            <Switch>
+              <Route exact path='/' render={() => <Redirect to={routeConfig[0].path} />} />
+              {routeConfig.map(route => {
+                return <Route path={route.path} component={route.component} key={route.page} />
+              })}
+              <Route component={NoFoundPage} />
+            </Switch>
+          </main>
+        </div>
+      </HashRouter>
     )
   }
 }
