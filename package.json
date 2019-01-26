@@ -10,17 +10,17 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test::unit": "CI=true react-scripts test --coverage --env=jsdom",
+    "build": "if react-scripts build; then echo '😏 Build success'; else echo '😨 Build failure';exit 1; fi",
+    "test::unit": "if CI=true react-scripts test --coverage --env=jsdom; then echo '✅ Unit test run success'; else echo '❌ Unit test run failure';exit 1; fi",
     "functional::local": "npm run start:selenium && codeceptjs run --steps --config=./codecept/local.config.js",
-    "functional::browserstack": "codeceptjs run --steps --config=./codecept/bs.config.js",
+    "functional::browserstack": "if codeceptjs run --steps --config=./codecept/bs.config.js; then echo '🎊 Functional test run success'; else echo '💔 Functional test run failure';exit 1; fi",
     "functional::browserstack:local": "export IS_TEST_LOCAL=true; npm run functional::browserstack",
     "start:selenium": "selenium-standalone start > /dev/null 2>&1 &",
     "kill:selenium": "lsof -t -i :4444 | xargs kill",
     "deploy::prod": "npm run build && gh-pages -d build && npm run delete::build",
     "delete::build": "rm -r build",
     "eject": "react-scripts eject",
-    "lint": "standard --fix | snazzy"
+    "lint": "if standard --fix | snazzy; then echo '💯 Lint perfect'; else echo '⁉️ Lint get error please run `npm run lint` check again';exit 1; fi"
   },
   "eslintConfig": {
     "extends": "react-app"
