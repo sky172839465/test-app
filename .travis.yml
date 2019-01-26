@@ -23,6 +23,6 @@ deploy:
   on:
     branch: master
 after_deploy:
-  - npm run functional::browserstack
+  - npm run functional::browserstack:multiple
 true:
   branch: master
