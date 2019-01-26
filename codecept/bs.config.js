@@ -24,7 +24,7 @@ exports.config = {
   tests: '../src/__e2e__/src/**/**.js',
   output: '../report',
   multiple: {
-    basic: {
+    mac: {
       browsers: [
         {
           browser: 'safari',
@@ -41,7 +41,11 @@ exports.config = {
             os_version: 'High Sierra',
             ...getBrowserConfig('Mac Chrome')
           }
-        },
+        }
+      ]
+    },
+    windows: {
+      browsers: [
         {
           browser: 'chrome',
           desiredCapabilities: {
@@ -58,6 +62,7 @@ exports.config = {
       url: BASE_URL,
       user: BS_USER,
       key: BS_KEY,
+      host: `${BS_USER}:${BS_KEY}@hub.browserstack.com`,
       desiredCapabilities: {
         os: 'Windows',
         os_version: '10',
