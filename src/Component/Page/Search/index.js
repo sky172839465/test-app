@@ -46,7 +46,7 @@ class Search extends Component {
     fetch(`${API_END_POINT}/users/${userName}/repos`)
       .then(resp => resp.json())
       .then(data => {
-        const message = _.get(data, 'message', _.isEmpty(data) ? 'No Found' : '')
+        const message = _.get(data, 'message', _.isEmpty(data) ? 'Not Found' : '')
         const repoList = _.isEmpty(message) ? data : []
         this.setState({
           repoList,
