@@ -2,10 +2,10 @@ import React, {Component} from 'react'
 import {withRouter} from 'react-router-dom'
 import clx from 'classnames'
 import _ from 'lodash'
-import {API_END_POINT} from '../../../constant'
-import SearchArea from './SearchArea'
-import RepoCard from './RepoCard'
-import ResultNotFound from '../../Common/ResultNotFound'
+import {API_END_POINT} from '../../constant'
+import SearchArea from './Search/SearchArea/'
+import RepoCard from './Search/RepoCard'
+import ResultNotFound from '../Common/ResultNotFound'
 
 class Search extends Component {
   constructor () {

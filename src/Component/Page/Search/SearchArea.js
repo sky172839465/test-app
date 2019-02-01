@@ -1,6 +1,6 @@
 import React from 'react'
 import clx from 'classnames'
-import styles from './index.module.scss'
+import styles from './SearchArea.module.scss'
 
 const SearchArea = (props) => {
   const {

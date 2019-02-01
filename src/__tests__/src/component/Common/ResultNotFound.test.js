@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import ResultNotFound from '../../../../../component/Common/ResultNotFound'
+import ResultNotFound from '../../../../component/Common/ResultNotFound'
 
 const props = {
   className: 'testClassName',
