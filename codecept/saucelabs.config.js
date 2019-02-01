@@ -3,8 +3,8 @@ const startDate = `${now.getFullYear()}/${now.getMonth() + 1}/${now.getDate()}`
 const startTime = `${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`
 const {
   PROJECT_NAME = 'Test app',
-  BS_USER,
-  BS_KEY,
+  SAUCE_USERNAME,
+  SAUCE_ACCESS_KEY,
   BASE_URL = 'https://sky172839465.github.io/test-app',
   TRAVIS_BUILD_NUMBER = `local ${startDate} ${startTime}`,
   TRAVIS_JOB_NUMBER = '',
@@ -60,8 +60,8 @@ exports.config = {
   helpers: {
     WebDriverIO: {
       url: BASE_URL,
-      user: BS_USER,
-      key: BS_KEY,
+      user: SAUCE_USERNAME,
+      key: SAUCE_ACCESS_KEY,
       desiredCapabilities: {
         os: 'Windows',
         os_version: '10',
