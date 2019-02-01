@@ -3,9 +3,9 @@ import {withRouter} from 'react-router-dom'
 import clx from 'classnames'
 import _ from 'lodash'
 import {API_END_POINT} from '../../../constant'
-import SearchArea from './SearchArea'
-import RepoCard from './RepoCard'
-import ResultNotFound from '../../Common/ResultNotFound'
+import SearchArea from './SearchArea/index'
+import RepoCard from './RepoCard/index'
+import ResultNotFound from '../../Common/ResultNotFound/index'
 
 class Search extends Component {
   constructor () {

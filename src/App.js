@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { HashRouter, Switch, Route, Redirect } from 'react-router-dom'
 import routeConfig from './routeConfig'
-import AppHeader from './component/Common/AppHeader'
-import NoFoundPage from './component/Page/NotFound'
+import AppHeader from './component/Common/AppHeader/index'
+import NoFoundPage from './component/Page/NotFound/index'
 import 'bulma/css/bulma.min.css'
 
 class App extends Component {

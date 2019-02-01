@@ -1,5 +1,5 @@
 import Loadable from 'react-loadable'
-import AppLoading from './component/Common/AppLoading'
+import AppLoading from './component/Common/AppLoading/index'
 
 const lazyloadComponent = (pageName) => (
   Loadable({
