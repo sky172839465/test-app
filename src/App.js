@@ -19,7 +19,12 @@ class App extends Component {
               <Switch>
                 <Route exact path='/' render={() => <Redirect to={routeConfig[0].path} />} />
                 {routeConfig.map(route => {
-                  return <Route path={route.path} component={route.component} key={route.page} />
+                  const Componet = route.component
+                  return <Route
+                    path={route.path}
+                    render={() => <Componet />}
+                    key={route.page}
+                  />
                 })}
                 <Route component={NoFoundPage} />
               </Switch>

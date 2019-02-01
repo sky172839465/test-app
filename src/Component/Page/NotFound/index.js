@@ -1,14 +1,7 @@
-import React, {Component} from 'react'
+import React from 'react'
 
-class NotFound extends Component {
-  constructor () {
-    super()
-    this.state = {}
-  }
-
-  render () {
-    return <div>NotFound</div>
-  }
+const NotFound = ({message = 'NotFound'}) => {
+  return <div>{message}</div>
 }
 
 export default NotFound

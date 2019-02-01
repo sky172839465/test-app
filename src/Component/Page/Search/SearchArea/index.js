@@ -30,7 +30,7 @@ const SearchArea = (props) => {
           />
           {
             isEmptyUserName &&
-            <p className='help is-danger'>
+            <p data-role='error-msg' className='help is-danger'>
               This field is required
             </p>
           }

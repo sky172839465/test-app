@@ -13,11 +13,6 @@ const routeConfig = [
     page: 'search',
     path: '/search',
     component: lazyloadComponent('Search')
-  },
-  {
-    page: 'detail',
-    path: '/detail',
-    component: lazyloadComponent('Detail')
   }
 ]
 

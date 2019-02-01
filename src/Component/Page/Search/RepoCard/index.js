@@ -15,7 +15,7 @@ const RepoCard = (props) => {
           {name}
         </p>
       </div>
-      <div className='card-content'>
+      <div data-role='desc' className='card-content'>
         {description}
       </div>
       <footer className='card-footer'>
