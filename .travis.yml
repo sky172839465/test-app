@@ -11,8 +11,6 @@ install:
 script: echo "npm test temporarily disabled"
 before_deploy:
   - npm run lint
-  - ls -l
-  - npm run test && codecov
   - npm run build
 deploy:
   provider: pages
