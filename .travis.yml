@@ -10,7 +10,7 @@ install:
   - npm install
 before_deploy:
   - npm run lint
-  - npm run test && codecov
+  - CI=true npm run test && codecov
   - npm run build
 deploy:
   provider: pages
