@@ -16,7 +16,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "if react-scripts build; then echo '😏 Build success'; else echo '😨 Build failure';exit 1; fi",
-    "test": "if react-scripts test --coverage --env=jsdom; then echo '✅ Unit test run success'; else echo '❌ Unit test run failure';exit 1; fi",
+    "test": "if CI=true react-scripts test --coverage --env=jsdom; then echo '✅ Unit test run success'; else echo '❌ Unit test run failure';exit 1; fi",
     "test::single": "react-scripts test --coverage --env=jsdom",
     "functional::local": "npm run start:selenium && codeceptjs run --steps --config=./codecept/local.config.js",
     "functional::online": "if codeceptjs run --steps --config=./codecept/saucelabs.config.js; then echo '🎊 Functional test run success'; else echo '💔 Functional test run failure';exit 1; fi",
