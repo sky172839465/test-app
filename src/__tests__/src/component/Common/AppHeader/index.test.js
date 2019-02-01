@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import AppHeader from '../../../../../component/Common/AppHeader'
+import AppHeader from '../../../../../component/Common/AppHeader/index'
 
 const props = {
   name: 'Test App',
