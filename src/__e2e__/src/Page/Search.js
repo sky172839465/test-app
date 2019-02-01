@@ -3,7 +3,7 @@ Feature('Search page')
 const pageObject = require('../../pageObject')
 
 Scenario('default page', (I) => {
-  I.amOnPage('/')
+  I.amOnPage('/test-app')
   I.waitForVisible(pageObject.appLink)
   I.see('Test App', pageObject.appLink)
   I.seeElement(pageObject.userNameInput)
