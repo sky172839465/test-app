@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import RepoCard from '../../../../../../component/Page/Search/RepoCard/index'
+import RepoCard from '../../../../../../component/Page/Search/RepoCard'
 
 const props = {
   repo: {

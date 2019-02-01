@@ -1,9 +1,9 @@
 import Loadable from 'react-loadable'
-import AppLoading from './component/Common/AppLoading/index'
+import AppLoading from './component/Common/AppLoading'
 
 const lazyloadComponent = (pageName) => (
   Loadable({
-    loader: () => import(`./component/Page/${pageName}/index`),
+    loader: () => import(`./component/Page/${pageName}`),
     loading: AppLoading
   })
 )

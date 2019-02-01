@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import AppLoading from '../../../../../component/Common/AppLoading/index'
+import AppLoading from '../../../../../component/Common/AppLoading'
 
 const props = {
 }

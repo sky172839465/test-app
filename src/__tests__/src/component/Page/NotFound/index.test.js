@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import NotFound from '../../../../../component/Page/NotFound/index'
+import NotFound from '../../../../../component/Page/NotFound'
 
 const props = {
   message: 'test not found'
