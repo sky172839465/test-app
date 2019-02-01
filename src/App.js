@@ -19,10 +19,9 @@ class App extends Component {
               <Switch>
                 <Route exact path='/' render={() => <Redirect to={routeConfig[0].path} />} />
                 {routeConfig.map(route => {
-                  const Componet = route.component
                   return <Route
                     path={route.path}
-                    render={() => <Componet />}
+                    component={route.component}
                     key={route.page}
                   />
                 })}
