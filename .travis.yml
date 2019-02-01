@@ -8,6 +8,7 @@ cache:
     - node_modules
 install:
   - npm install
+script: echo "npm test temporarily disabled"
 before_deploy:
   - npm run lint
   - CI=true npm run test && codecov
