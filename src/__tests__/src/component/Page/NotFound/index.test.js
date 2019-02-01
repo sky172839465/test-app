@@ -9,7 +9,7 @@ const props = {
 describe('/component/Page/NotFound', () => {
   it('test default not found content', () => {
     const wrapper = shallow(<NotFound />)
-    expect(wrapper.text()).toEqual('NotFound')
+    expect(wrapper.text()).toEqual('Oops! Not found page.')
   })
 
   it('test custom not found message content', () => {

@@ -42,7 +42,8 @@ const SearchArea = (props) => {
               'button is-primary is-outlined',
               {'is-loading': isLoading}
             )}
-            disabled={isEmptyUserName}>
+            disabled={isEmptyUserName}
+          >
             Search
           </button>
         </div>
