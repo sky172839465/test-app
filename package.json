@@ -16,7 +16,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "if react-scripts build; then echo '😏 Build success'; else echo '😨 Build failure';exit 1; fi",
-    "test::unit": "if CI=true react-scripts test --coverage --env=jsdom; then echo '✅ Unit test run success'; else echo '❌ Unit test run failure';exit 1; fi",
+    "test": "if react-scripts test --coverage --env=jsdom; then echo '✅ Unit test run success'; else echo '❌ Unit test run failure';exit 1; fi",
+    "test::single": "react-scripts test --coverage --env=jsdom",
     "functional::local": "npm run start:selenium && codeceptjs run --steps --config=./codecept/local.config.js",
     "functional::browserstack": "if codeceptjs run --steps --config=./codecept/bs.config.js; then echo '🎊 Functional test run success'; else echo '💔 Functional test run failure';exit 1; fi",
     "functional::browserstack:multiple": "if codeceptjs run-multiple --all --steps --config=./codecept/bs.config.js; then echo '🎊 Functional test run success'; else echo '💔 Functional test run failure';exit 1; fi",
@@ -38,6 +39,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@types/jest": "^23.3.13",
     "codeceptjs": "^1.4.6",
     "codecov": "^3.1.0",
     "enzyme": "^3.7.0",
