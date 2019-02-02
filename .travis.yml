@@ -21,8 +21,8 @@ deploy:
   on:
     branch: master
 after_deploy:
-  - set -e
   - npm run functional::online
-  - set +e
+after_script:
+  - if [ $TRAVIS_TEST_RESULT -eq 1 ]; exit 1; fi
 true:
   branch: master
