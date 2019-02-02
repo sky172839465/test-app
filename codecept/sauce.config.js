@@ -12,8 +12,8 @@ const {
 
 const getBrowserConfig = browserName => ({
   'tunnel-identifier': TRAVIS_JOB_NUMBER,
-  name: `${PROJECT_NAME} in ${browserName} ${TRAVIS_BUILD_NUMBER} ${TRAVIS_JOB_NUMBER}`,
-  build: TRAVIS_JOB_NUMBER
+  name: PROJECT_NAME,
+  build: `${PROJECT_NAME} in ${browserName} ${TRAVIS_BUILD_NUMBER} ${TRAVIS_JOB_NUMBER}`
 })
 
 exports.config = {
@@ -46,8 +46,7 @@ exports.config = {
         {
           browser: 'chrome',
           desiredCapabilities: {
-            os: 'Windows',
-            os_version: '10',
+            platform: 'Windows 10',
             ...getBrowserConfig('Windows Chrome')
           }
         }
@@ -63,8 +62,7 @@ exports.config = {
       user: SAUCE_USERNAME,
       key: SAUCE_ACCESS_KEY,
       desiredCapabilities: {
-        os: 'Windows',
-        os_version: '10',
+        platform: 'Windows 10',
         ...getBrowserConfig('Windows Chrome')
       },
       browser: 'chrome',
