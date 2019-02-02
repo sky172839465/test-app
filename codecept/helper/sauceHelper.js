@@ -14,7 +14,7 @@ class SauceHelper extends Helper {
     const sessionID = _.get(browser, 'requestHandler.sessionID', '')
     if (this.steps === 0 && !_.isEmpty(sessionID)) {
       console.log(`⚡️ Saucelabs Feature Log: https://saucelabs.com/beta/tests/${sessionID}`)
-      this.steps = 0
+      this.steps += 1
     }
   }
 
