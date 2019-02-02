@@ -9,12 +9,11 @@ cache:
 install:
   - npm install
 script:
-  - git config user.name "Travis CI"
-  - git config user.email "sky172839465@gmail.com"
   - echo "npm test temporarily disabled"
   - npm run lint
   - npm run test && codecov
-  - npm run deploy::prod
+  - npm run build
+  - bash ./ghpage-deploy.sh
   - npm run functional::online
 true:
   branch: master
