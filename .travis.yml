@@ -8,21 +8,11 @@ cache:
     - node_modules
 install:
   - npm install
-script: echo "npm test temporarily disabled"
-before_deploy:
+script:
+  - echo "npm test temporarily disabled"
   - npm run lint
   - npm run test && codecov
-  - npm run build
-deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: "$GITHUB_TOKEN"
-  local-dir: build
-  on:
-    branch: master
-after_deploy:
+  - npm run deploy::prod
   - npm run functional::online
-# after_script:
-#   - if [ $TRAVIS_TEST_RESULT -eq 0 ]; then echo "Success"; else echo "Failure"; exit 1; fi
 true:
   branch: master
