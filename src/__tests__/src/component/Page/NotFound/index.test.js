@@ -1,12 +1,12 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import NotFound from '../../../../../component/Page/NotFound'
+import NotFound from '../../../../../Component/Page/NotFound'
 
 const props = {
   message: 'test not found'
 }
 
-describe('/component/Page/NotFound', () => {
+describe('/Component/Page/NotFound', () => {
   it('test default not found content', () => {
     const wrapper = shallow(<NotFound />)
     expect(wrapper.text()).toEqual('Oops! Not found page.')

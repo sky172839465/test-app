@@ -1,13 +1,13 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import AppHeader from '../../../../../component/Common/AppHeader'
+import AppHeader from '../../../../../Component/Common/AppHeader'
 
 const props = {
   name: 'Test App',
   link: 'https://sky172839465.github.io/test-app'
 }
 
-describe('/component/Common/AppHeader', () => {
+describe('/Component/Common/AppHeader', () => {
   const wrapper = shallow(<AppHeader {...props} />)
   it('test header content', () => {
     const {

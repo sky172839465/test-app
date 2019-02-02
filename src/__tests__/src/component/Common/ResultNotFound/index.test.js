@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import ResultNotFound from '../../../../../component/Common/ResultNotFound'
+import ResultNotFound from '../../../../../Component/Common/ResultNotFound'
 
 const props = {
   className: 'testClassName',
@@ -8,7 +8,7 @@ const props = {
   children: 'result not found'
 }
 
-describe('/component/Common/ResultNotFound', () => {
+describe('/Component/Common/ResultNotFound', () => {
   const wrapper = shallow(<ResultNotFound {...props} />)
   it('test not found message content', () => {
     const message = wrapper.find(`[className*="${props.className}"]`)

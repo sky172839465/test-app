@@ -1,6 +1,6 @@
 import React from 'react'
 import { mount, shallow } from 'enzyme'
-import SearchArea from '../../../../../../component/Page/Search/SearchArea'
+import SearchArea from '../../../../../../Component/Page/Search/SearchArea'
 
 const props = {
   userName: 'testGitHubUser',
@@ -10,7 +10,7 @@ const props = {
   onUserNameChange: jest.fn()
 }
 
-describe('/component/Page/Search/SearchArea', () => {
+describe('/Component/Page/Search/SearchArea', () => {
   it('test search area has value content', () => {
     const wrapper = shallow(<SearchArea {...props} />)
     const {

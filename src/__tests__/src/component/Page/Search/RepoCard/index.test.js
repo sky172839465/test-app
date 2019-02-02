@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import RepoCard from '../../../../../../component/Page/Search/RepoCard'
+import RepoCard from '../../../../../../Component/Page/Search/RepoCard'
 
 const props = {
   repo: {
@@ -10,7 +10,7 @@ const props = {
   }
 }
 
-describe('/component/Page/Search/RepoCard', () => {
+describe('/Component/Page/Search/RepoCard', () => {
   const wrapper = shallow(<RepoCard {...props} />)
   it('test repo card content', () => {
     const title = wrapper.find('p[className="subtitle"]').text()
