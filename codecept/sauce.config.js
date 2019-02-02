@@ -58,6 +58,9 @@ exports.config = {
     }
   },
   helpers: {
+    SauceHelper: {
+      require: './sauceHelper.js'
+    },
     WebDriverIO: {
       url: BASE_URL,
       user: SAUCE_USERNAME,
