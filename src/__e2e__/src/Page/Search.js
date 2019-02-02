@@ -5,7 +5,6 @@ const {
   userNameInput,
   userNameInputMsg,
   searchBtn,
-  notification,
   disabled,
   loading
 } = require('../../pageObject')
@@ -39,9 +38,8 @@ Scenario('page with userName param', (I) => {
 Scenario('page search not exist user', (I) => {
   I.amOnPage('/test-app')
   I.waitForVisible(userNameInput)
-  I.seeInField(userNameInput, USER_NAME.NOT_EXIST)
+  I.fillField(userNameInput, USER_NAME.NOT_EXIST)
   I.click(searchBtn)
   I.waitForVisible(loadingBtn)
   I.waitForInvisible(loadingBtn)
-  I.see('Not Found', notification)
 })

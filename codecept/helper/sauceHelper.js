@@ -5,6 +5,7 @@ const _ = require('lodash')
 class SauceHelper extends Helper {
   _beforeStep (step) {
     const browser = _.get(this.helpers, 'WebDriverIO', {})
+    console.log({browser})
     const sessionReported = _.get(browser, 'sessionReported', true)
     const sessionID = _.get(browser, 'requestHandler.sessionID', '')
     if (!sessionReported && !_.isEmpty(sessionID)) {
