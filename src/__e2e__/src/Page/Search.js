@@ -31,8 +31,6 @@ Scenario('page with userName param', (I) => {
   I.waitForVisible(userNameInput)
   I.seeInField(userNameInput, USER_NAME.EXIST)
   I.dontSeeElement(userNameInputMsg)
-  I.seeElement(loadingBtn)
-  I.waitForInvisible(loadingBtn)
 })
 
 Scenario('page search not exist user', (I) => {
