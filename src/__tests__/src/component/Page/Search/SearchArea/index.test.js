@@ -1,6 +1,6 @@
 import React from 'react'
 import { mount, shallow } from 'enzyme'
-import SearchArea from './../../../../../../component/Page/Search/SearchArea'
+import SearchArea from '../../../../../../component/Page/Search/SearchArea'
 
 const props = {
   userName: 'testGitHubUser',
