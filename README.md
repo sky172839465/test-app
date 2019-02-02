@@ -2,7 +2,7 @@
 
 [![FOSSA Status][fossa-status-image]][fossa-status-url]
 [![Build Status][travis-image]][travis-url]
-
+[![Saucelabs Ststus][sauce-labs-status-image]][sauce-labs-status-url]
 [![Coverage Status][codecov-image]][codecov-url]
 [![JavaScript Style Guide][standard-image]][standard-url]  
 
@@ -10,7 +10,7 @@
 [![devDependency Status][david-dm-dev-image]][david-dm-dev-url]
 <!--[![HitCount][hit-count-image]][hit-count-url]-->
 
-### Compatibility
+<!-- ### Compatibility -->
 
 
 
@@ -19,8 +19,8 @@
 [fossa-status-url]: https://app.fossa.io/projects/git%2Bgithub.com%2Fsky172839465%2Ftest-app?ref=badge_shield
 [travis-image]: https://img.shields.io/travis/sky172839465/test-app.svg
 [travis-url]: https://travis-ci.org/sky172839465/test-app
-[sauce-labs-status-image]: https://www.browserstack.com/automate/badge.svg?badge_key=NTJpTXlLR0tHalRTTUh1NkxDaDh0cjJQdHRQRFhIdzczSms5a1UrcTA4cz0tLXVlVStjOXlDTkJsdndIeFk5RG9mdHc9PQ==--2267f0c79b6524d8ddea0cedaec66834dbe153c1%
-[sauce-labs-status-url]: https://www.browserstack.com/automate/public-build/NTJpTXlLR0tHalRTTUh1NkxDaDh0cjJQdHRQRFhIdzczSms5a1UrcTA4cz0tLXVlVStjOXlDTkJsdndIeFk5RG9mdHc9PQ==--2267f0c79b6524d8ddea0cedaec66834dbe153c1%
+[sauce-labs-status-image]: https://saucelabs.com/buildstatus/sky810684
+[sauce-labs-status-url]: ''
 [codecov-image]: https://img.shields.io/codecov/c/github/sky172839465/test-app.svg
 [codecov-url]: https://codecov.io/gh/sky172839465/test-app
 [standard-image]: https://img.shields.io/badge/code_style-standard-brightgreen.svg
