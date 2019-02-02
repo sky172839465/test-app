@@ -6,7 +6,6 @@ const {
   userNameInputMsg,
   searchBtn,
   disabled,
-  loading,
   notification
 } = require('../../pageObject')
 const USER_NAME = {
@@ -14,7 +13,6 @@ const USER_NAME = {
   NOT_EXIST: 'NOT_EXIST'
 }
 const disabledBtn = `${searchBtn}${disabled}`
-const loadingBtn = `${searchBtn}${loading}`
 
 Scenario('default page', (I) => {
   I.amOnPage('/test-app')
