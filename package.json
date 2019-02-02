@@ -6,7 +6,6 @@
   "dependencies": {
     "bulma": "^0.7.2",
     "classnames": "^2.2.6",
-    "isomorphic-fetch": "^2.2.1",
     "lodash": "^4.17.11",
     "react": "16.6.3",
     "react-dom": "16.6.3",
@@ -49,6 +48,7 @@
     "enzyme-to-json": "^3.3.5",
     "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0",
+    "saucelabs": "^1.5.0",
     "selenium-standalone": "^6.15.4",
     "snazzy": "7.1.1",
     "standard": "11.0.1",

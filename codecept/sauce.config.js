@@ -24,18 +24,18 @@ exports.config = {
     mac: {
       browsers: [
         {
-          browser: 'safari',
           desiredCapabilities: {
-            os: 'OS X',
-            os_version: 'High Sierra',
+            browserName: 'safari',
+            platform: 'OS X',
+            version: 'High Sierra',
             ...getBrowserConfig('Mac Safari')
           }
         },
         {
-          browser: 'chrome',
           desiredCapabilities: {
-            os: 'OS X',
-            os_version: 'High Sierra',
+            browserName: 'chrome',
+            platform: 'OS X',
+            version: 'High Sierra',
             ...getBrowserConfig('Mac Chrome')
           }
         }
@@ -44,10 +44,10 @@ exports.config = {
     windows: {
       browsers: [
         {
-          browser: 'chrome',
           desiredCapabilities: {
-            os: 'Windows',
-            os_version: '10',
+            browserName: 'chrome',
+            platform: 'Windows',
+            version: '10',
             ...getBrowserConfig('Windows Chrome')
           }
         }
@@ -56,17 +56,15 @@ exports.config = {
   },
   helpers: {
     SauceHelper: {
-      require: './helper/sauceHelper.js',
-      user: SAUCE_USERNAME,
-      key: SAUCE_ACCESS_KEY
+      require: './helper/sauceHelper.js'
     },
     WebDriverIO: {
       url: BASE_URL,
       user: SAUCE_USERNAME,
       key: SAUCE_ACCESS_KEY,
       desiredCapabilities: {
-        os: 'Windows',
-        os_version: '10',
+        platform: 'Windows',
+        version: '10',
         ...getBrowserConfig('Windows Chrome')
       },
       browser: 'chrome',

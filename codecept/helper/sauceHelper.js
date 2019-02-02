@@ -1,28 +1,21 @@
 const codecept = require('codeceptjs')
-const fetch = require('isomorphic-fetch')
 const Helper = codecept.helper
+const SauceLabs = require('saucelabs')
+const {
+  SAUCE_USERNAME,
+  SAUCE_ACCESS_KEY
+} = process.env
+const Acct = new SauceLabs({
+  username: SAUCE_USERNAME,
+  password: SAUCE_ACCESS_KEY
+})
 
 // https://github.com/puneet0191/codeceptjs-saucehelpe
 class SauceHelper extends Helper {
   _updateSauceJob (sessionId, data) {
-    let sauceUrl = 'Test finished. Link to job: https://saucelabs.com/jobs/'
-    sauceUrl = sauceUrl.concat(sessionId)
+    const sauceUrl = `Test finished. Link to job: https://saucelabs.com/jobs/${sessionId}`
     console.log(sauceUrl)
-    let statusUrl = 'https://saucelabs.com/rest/v1/'
-    statusUrl = statusUrl.concat(this.config.user)
-    statusUrl = statusUrl.concat('/jobs/')
-    statusUrl = statusUrl.concat(sessionId)
-
-    console.log(this.config.user)
-    fetch(statusUrl, {
-      method: 'PUT',
-      json: data,
-      auth: {
-        'user': this.config.user,
-        'pass': this.config.key
-      }
-    })
-      .then(this._callback)
+    Acct.updateJob(sessionId, data, this._callback)
   }
 
   _callback (error, response, body) {
