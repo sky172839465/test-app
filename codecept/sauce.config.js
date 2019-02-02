@@ -24,18 +24,18 @@ exports.config = {
     mac: {
       browsers: [
         {
+          browser: 'safari',
           desiredCapabilities: {
-            browserName: 'safari',
-            platform: 'OS X',
-            version: 'High Sierra',
+            os: 'OS X',
+            os_version: 'High Sierra',
             ...getBrowserConfig('Mac Safari')
           }
         },
         {
+          browser: 'chrome',
           desiredCapabilities: {
-            browserName: 'chrome',
-            platform: 'OS X',
-            version: 'High Sierra',
+            os: 'OS X',
+            os_version: 'High Sierra',
             ...getBrowserConfig('Mac Chrome')
           }
         }
@@ -44,10 +44,10 @@ exports.config = {
     windows: {
       browsers: [
         {
+          browser: 'chrome',
           desiredCapabilities: {
-            browserName: 'chrome',
-            platform: 'Windows',
-            version: '10',
+            os: 'Windows',
+            os_version: '10',
             ...getBrowserConfig('Windows Chrome')
           }
         }
@@ -63,8 +63,8 @@ exports.config = {
       user: SAUCE_USERNAME,
       key: SAUCE_ACCESS_KEY,
       desiredCapabilities: {
-        platform: 'Windows',
-        version: '10',
+        os: 'Windows',
+        os_version: '10',
         ...getBrowserConfig('Windows Chrome')
       },
       browser: 'chrome',
