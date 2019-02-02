@@ -3,14 +3,14 @@ node_js:
   - stable
 addons:
   sauce_connect: true
+matrix:
+  fail_fast: true
 cache:
   directories:
     - node_modules
 install:
   - npm install
-script:
-  - echo "npm test temporarily disabled"
-  - set -e
+script: echo "npm test temporarily disabled"
 before_deploy:
   - npm run lint
   - npm run test && codecov
