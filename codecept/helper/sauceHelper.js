@@ -1,5 +1,5 @@
 const codecept = require('codeceptjs')
-const fetch = require('fetch')
+const fetch = require('isomorphic-fetch')
 const Helper = codecept.helper
 
 // https://github.com/puneet0191/codeceptjs-saucehelpe
@@ -14,15 +14,15 @@ class SauceHelper extends Helper {
     statusUrl = statusUrl.concat(sessionId)
 
     console.log(this.config.user)
-    fetch({
-      url: statusUrl,
+    fetch(statusUrl, {
       method: 'PUT',
       json: data,
       auth: {
         'user': this.config.user,
         'pass': this.config.key
       }
-    }, this._callback)
+    })
+      .then(this._callback)
   }
 
   _callback (error, response, body) {

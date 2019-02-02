@@ -1,4 +1,3 @@
-const sauceLib = require('codeceptjs-saucehelper')
 const now = new Date()
 const startDate = `${now.getFullYear()}/${now.getMonth() + 1}/${now.getDate()}`
 const startTime = `${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`
@@ -57,7 +56,9 @@ exports.config = {
   },
   helpers: {
     SauceHelper: {
-      require: './helper/sauceHelper.js'
+      require: './helper/sauceHelper.js',
+      user: SAUCE_USERNAME,
+      key: SAUCE_ACCESS_KEY
     },
     WebDriverIO: {
       url: BASE_URL,
