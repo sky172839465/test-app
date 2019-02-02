@@ -5,12 +5,13 @@ const {
   userNameInput,
   userNameInputMsg,
   searchBtn,
+  notification,
   disabled,
   loading
 } = require('../../pageObject')
 const USER_NAME = {
   EXIST: 'sky172839465',
-  INVALID: 'THIS_IS_INVALID_USER'
+  NOT_EXIST: 'NOT_EXIST'
 }
 const disabledBtn = `${searchBtn}${disabled}`
 const loadingBtn = `${searchBtn}${loading}`
@@ -28,11 +29,19 @@ Scenario('default page', (I) => {
 
 Scenario('page with userName param', (I) => {
   I.amOnPage(`test-app/#/search?userName=${USER_NAME.EXIST}`)
-  I.waitForVisible(brandLink)
-  I.see('Test App', brandLink)
-  I.seeElement(userNameInput)
+  I.waitForVisible(userNameInput)
   I.seeInField(userNameInput, USER_NAME.EXIST)
   I.dontSeeElement(userNameInputMsg)
   I.seeElement(loadingBtn)
   I.waitForInvisible(loadingBtn)
+})
+
+Scenario('page search not exist user', (I) => {
+  I.amOnPage('/test-app')
+  I.waitForVisible(userNameInput)
+  I.seeInField(userNameInput, USER_NAME.NOT_EXIST)
+  I.click(searchBtn)
+  I.waitForVisible(loadingBtn)
+  I.waitForInvisible(loadingBtn)
+  I.see('Not Found', notification)
 })

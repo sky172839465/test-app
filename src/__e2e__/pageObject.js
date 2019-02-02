@@ -6,7 +6,8 @@ const pageObject = {
   notFound: '[data-role="not-found"]',
   resultArea: '[data-role="result-area"]',
   disabled: ':disabled',
-  loading: '.is-loading'
+  loading: '.is-loading',
+  notification: '.notification'
 }
 
 module.exports = pageObject
