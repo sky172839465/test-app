@@ -3,7 +3,10 @@ const Helper = codecept.helper
 const _ = require('lodash')
 
 class SauceHelper extends Helper {
-  steps = 0
+  constructor () {
+    super()
+    this.steps = 0
+  }
 
   _before () {
     this.steps = 0
