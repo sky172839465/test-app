@@ -13,7 +13,7 @@ const Acct = new SauceLabs({
 // https://github.com/puneet0191/codeceptjs-saucehelpe
 class SauceHelper extends Helper {
   _updateSauceJob (sessionId, data) {
-    const sauceUrl = `Test finished. Link to job: https://saucelabs.com/jobs/${sessionId}`
+    const sauceUrl = `⚡️ Test finished. Link to job: https://saucelabs.com/jobs/${sessionId}`
     console.log(sauceUrl)
     Acct.updateJob(sessionId, data, this._callback)
   }
