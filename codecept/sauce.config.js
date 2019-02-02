@@ -7,14 +7,11 @@ const {
   SAUCE_ACCESS_KEY,
   BASE_URL = 'https://sky172839465.github.io/test-app',
   TRAVIS_BUILD_NUMBER = `local ${startDate} ${startTime}`,
-  TRAVIS_JOB_NUMBER = '',
-  IS_TEST_LOCAL = false
+  TRAVIS_JOB_NUMBER = ''
 } = process.env
 
 const getBrowserConfig = browserName => ({
-  'browserstack.local': IS_TEST_LOCAL,
-  'browserstack.debug': true,
-  'browserstack.networkLogs': true,
+  'tunnel-identifier': TRAVIS_JOB_NUMBER,
   name: `${PROJECT_NAME}`,
   build: `${PROJECT_NAME} in ${browserName} ${TRAVIS_BUILD_NUMBER} ${TRAVIS_JOB_NUMBER}`
 })
