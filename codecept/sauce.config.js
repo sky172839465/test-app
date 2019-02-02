@@ -12,8 +12,8 @@ const {
 
 const getBrowserConfig = browserName => ({
   'tunnel-identifier': TRAVIS_JOB_NUMBER,
-  name: `${PROJECT_NAME}`,
-  build: `${PROJECT_NAME} in ${browserName} ${TRAVIS_BUILD_NUMBER} ${TRAVIS_JOB_NUMBER}`
+  name: `${PROJECT_NAME} in ${browserName} ${TRAVIS_BUILD_NUMBER} ${TRAVIS_JOB_NUMBER}`,
+  build: TRAVIS_JOB_NUMBER
 })
 
 exports.config = {
@@ -69,11 +69,11 @@ exports.config = {
       },
       browser: 'chrome',
       windowSize: 'maximize',
-      waitForTimeout: 300000,
+      waitForTimeout: 30000,
       smartWait: 5000,
       timeouts: {
-        script: 100000,
-        'page load': 100000
+        script: 10000,
+        'page load': 10000
       }
     }
   },
