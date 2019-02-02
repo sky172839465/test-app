@@ -1,7 +1,6 @@
 language: node_js
 node_js:
   - stable
-fail_fast: true
 addons:
   sauce_connect: true
 cache:
@@ -9,7 +8,9 @@ cache:
     - node_modules
 install:
   - npm install
-script: echo "npm test temporarily disabled"
+script:
+  - echo "npm test temporarily disabled"
+  - set -e
 before_deploy:
   - npm run lint
   - npm run test && codecov
