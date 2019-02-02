@@ -15,7 +15,7 @@ const getBrowserConfig = browserName => ({
   'browserstack.local': IS_TEST_LOCAL,
   'browserstack.debug': true,
   'browserstack.networkLogs': true,
-  project: `${PROJECT_NAME}`,
+  name: `${PROJECT_NAME}`,
   build: `${PROJECT_NAME} in ${browserName} ${TRAVIS_BUILD_NUMBER} ${TRAVIS_JOB_NUMBER}`
 })
 
