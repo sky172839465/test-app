@@ -5,14 +5,18 @@ exports.config = {
   helpers: {
     WebDriverIO: {
       url: 'http://localhost:3000',
-      browser: 'chrome'
+      browser: 'chrome',
+      smartWait: 5000,
+      waitForTimeout: 300000,
+      timeouts: {
+        script: 100000,
+        'page load': 100000
+      }
     }
   },
   include: {
-    I: './steps_file.js'
+    I: './actor/steps_file.js'
   },
   bootstrap: false,
-  coloredLogs: true,
-  timeout: 10000,
-  smartWait: true
+  coloredLogs: true
 }

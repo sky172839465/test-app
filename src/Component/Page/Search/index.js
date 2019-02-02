@@ -92,7 +92,7 @@ class Search extends Component {
           {
             _.isEmpty(message)
               ? (
-                <div className='columns is-multiline'>
+                <div data-role='result-area' className='columns is-multiline'>
                   {repoList.map((repo, index) => (
                     <div
                       key={index}

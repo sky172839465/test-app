@@ -59,7 +59,7 @@ exports.config = {
   },
   helpers: {
     SauceHelper: {
-      require: './sauceHelper.js'
+      require: './helper/sauceHelper.js'
     },
     WebDriverIO: {
       url: BASE_URL,
@@ -71,11 +71,17 @@ exports.config = {
         ...getBrowserConfig('Windows Chrome')
       },
       browser: 'chrome',
-      windowSize: 'maximize'
+      windowSize: 'maximize',
+      waitForTimeout: 300000,
+      smartWait: 5000,
+      timeouts: {
+        script: 100000,
+        'page load': 100000
+      }
     }
   },
   include: {
-    I: './steps_file.js'
+    I: './actor/steps_file.js'
   },
   bootstrap: false,
   coloredLogs: true,
