@@ -5,6 +5,7 @@ const pageObject = {
   searchBtn: 'button[type="submit"]',
   notFound: '[data-role="not-found"]',
   resultArea: '[data-role="result-area"]',
+  notification: '.notification',
   disabled: ':disabled',
   loading: '.is-loading'
 }

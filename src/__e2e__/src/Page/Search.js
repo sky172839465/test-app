@@ -6,7 +6,8 @@ const {
   userNameInputMsg,
   searchBtn,
   disabled,
-  loading
+  loading,
+  notification
 } = require('../../pageObject')
 const USER_NAME = {
   EXIST: 'sky172839465',
@@ -38,6 +39,5 @@ Scenario('page search not exist user', (I) => {
   I.waitForVisible(userNameInput)
   I.fillField(userNameInput, USER_NAME.NOT_EXIST)
   I.click(searchBtn)
-  I.waitForVisible(loadingBtn)
-  I.waitForInvisible(loadingBtn)
+  I.waitForVisible(notification)
 })
