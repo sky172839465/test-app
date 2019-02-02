@@ -22,7 +22,7 @@ deploy:
     branch: master
 after_deploy:
   - npm run functional::online
-after_script:
-  - if [ $TRAVIS_TEST_RESULT -eq 0 ]; then echo "Success"; else echo "Failure"; exit 1; fi
+# after_script:
+#   - if [ $TRAVIS_TEST_RESULT -eq 0 ]; then echo "Success"; else echo "Failure"; exit 1; fi
 true:
   branch: master
