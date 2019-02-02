@@ -57,7 +57,7 @@ exports.config = {
   },
   helpers: {
     SauceHelper: {
-      require: sauceLib
+      require: './helper/sauceHelper.js'
     },
     WebDriverIO: {
       url: BASE_URL,
