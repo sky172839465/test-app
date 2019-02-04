@@ -100,5 +100,5 @@ $ npm run functional::online:multiple
 <!-- table of contents -->
 [Unit Test]: https://github.com/sky172839465/test-app#unit-test
 [Functional Test]: https://github.com/sky172839465/test-app#functional-test
-[Config CI]: https://github.com/sky172839465/test-app#config-ci
 [Environment Variables]: https://github.com/sky172839465/test-app#environment-variables
+[Compatibility]: https://github.com/sky172839465/test-app#compatibility
