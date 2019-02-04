@@ -10,11 +10,52 @@
 [![devDependency Status][david-dm-dev-image]][david-dm-dev-url]
 <!--[![HitCount][hit-count-image]][hit-count-url]-->
 
+### Start
+#### Make sure you have install [nodejs][]
+
+```bash
+# clone repo
+git clone https://github.com/sky172839465/test-app.git
+
+# install dependency
+npm install
+
+# launch website
+npm start
+```
+
+### Table of Contents
+- [Unit Test]
+- [Functional Test]
+- [Visual Test]
+- [Config CI]
+- [Compatibility]
+
+### Unit Test
+```bash
+# test all unit test
+npm run test
+
+# test single unit test
+npm run test::single <test file>
+```
+### Functional Test
+```bash
+# test all functional test local (make sure website has been launch on https://localhost:3000 or run `npm start` first)
+npm run functional::local
+
+# test all functional test on saucelabs
+npm run functional::online
+
+# test all functional test on saucelabs with multiple platform
+npm run functional::online:multiple
+```
+### Config CI
 ### Compatibility
-[![Compatibility][compatibility-image]][compatibility-url]
+[![Saucelab Compatibility][compatibility-image]][compatibility-url]
 
 
-<!-- link source -->
+<!-- badge -->
 [fossa-status-image]: https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsky172839465%2Ftest-app.svg?type=shield
 [fossa-status-url]: https://app.fossa.io/projects/git%2Bgithub.com%2Fsky172839465%2Ftest-app?ref=badge_shield
 [travis-image]: https://img.shields.io/travis/sky172839465/test-app.svg
@@ -33,3 +74,12 @@
 [hit-count-url]: http://hits.dwyl.io/sky172839465/test-app
 [compatibility-image]: https://saucelabs.com/browser-matrix/sky810684.svg
 [compatibility-url]: https://saucelabs.com/u/sky810684
+
+<!-- install -->
+[nodejs]: https://nodejs.org
+
+<!--  -->
+[Unit Test]: https://github.com/sky172839465/test-app#unit-test
+[Functional Test]: https://github.com/sky172839465/test-app#functional-test
+[Config CI]: https://github.com/sky172839465/test-app#config-ci
+[Compatibility]: https://github.com/sky172839465/test-app#compatibility
