@@ -4,7 +4,7 @@ const SauceLabs = require('saucelabs')
 const {
   SAUCE_USERNAME,
   SAUCE_ACCESS_KEY
-} = process.env
+} = require('../commonData')
 const Acct = new SauceLabs({
   username: SAUCE_USERNAME,
   password: SAUCE_ACCESS_KEY

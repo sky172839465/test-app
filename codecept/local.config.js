@@ -3,6 +3,7 @@ exports.config = {
   tests: '../src/__e2e__/src/**/**.js',
   output: '../report',
   helpers: {
+    EyesHelper: { require: './helper/eyesHelper.js' },
     WebDriverIO: {
       url: 'http://localhost:3000',
       browser: 'chrome',

@@ -13,9 +13,10 @@ const USER_NAME = {
   NOT_EXIST: 'NOT_EXIST'
 }
 const disabledBtn = `${searchBtn}${disabled}`
+const route = '/test-app'
 
 Scenario('default page', (I) => {
-  I.amOnPage('/test-app')
+  I.amOnPage(route)
   I.waitForVisible(brandLink)
   I.see('Test App', brandLink)
   I.seeElement(userNameInput)
@@ -26,16 +27,18 @@ Scenario('default page', (I) => {
 })
 
 Scenario('page with userName param', (I) => {
-  I.amOnPage(`test-app/#/search?userName=${USER_NAME.EXIST}`)
+  I.amOnPage(`${route}/#/search?userName=${USER_NAME.EXIST}`)
   I.waitForVisible(userNameInput)
   I.seeInField(userNameInput, USER_NAME.EXIST)
   I.dontSeeElement(userNameInputMsg)
 })
 
 Scenario('page search not exist user', (I) => {
-  I.amOnPage('/test-app')
+  I.amOnPage(route)
   I.waitForVisible(userNameInput)
+  I.screenShotForVisualTest()
   I.fillField(userNameInput, USER_NAME.NOT_EXIST)
+  I.screenShotForVisualTest()
   I.click(searchBtn)
   I.waitForVisible(notification)
 })

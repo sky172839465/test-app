@@ -39,6 +39,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@applitools/eyes.webdriverio": "^2.0.0",
     "@types/jest": "^23.3.13",
     "codeceptjs": "^1.4.6",
     "codeceptjs-saucehelper": "^1.1.0",
