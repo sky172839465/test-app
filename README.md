@@ -11,46 +11,46 @@
 <!--[![HitCount][hit-count-image]][hit-count-url]-->
 
 ### Start
+#### Clone this repo
 #### Make sure you have install [nodejs][]
 
-```bash
-# clone repo
-git clone https://github.com/sky172839465/test-app.git
-
+```zsh
 # install dependency
-npm install
+$ npm install
 
 # launch website
-npm start
+$ npm start
 ```
 
 ### Table of Contents
 - [Unit Test]
 - [Functional Test]
-- [Visual Test]
 - [Config CI]
 - [Compatibility]
 
 ### Unit Test
-```bash
+```zsh
 # test all unit test
-npm run test
+$ npm run test
 
 # test single unit test
-npm run test::single <test file>
+$ npm run test::single <path/to/test-file>
 ```
+
 ### Functional Test
-```bash
+```zsh
 # test all functional test local (make sure website has been launch on https://localhost:3000 or run `npm start` first)
-npm run functional::local
+$ npm run functional::local
 
 # test all functional test on saucelabs
-npm run functional::online
+$ npm run functional::online
 
 # test all functional test on saucelabs with multiple platform
-npm run functional::online:multiple
+$ npm run functional::online:multiple
 ```
+
 ### Config CI
+
 ### Compatibility
 [![Saucelab Compatibility][compatibility-image]][compatibility-url]
 
@@ -78,7 +78,7 @@ npm run functional::online:multiple
 <!-- install -->
 [nodejs]: https://nodejs.org
 
-<!--  -->
+<!-- table of contents -->
 [Unit Test]: https://github.com/sky172839465/test-app#unit-test
 [Functional Test]: https://github.com/sky172839465/test-app#functional-test
 [Config CI]: https://github.com/sky172839465/test-app#config-ci
