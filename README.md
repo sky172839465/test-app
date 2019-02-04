@@ -10,9 +10,16 @@
 [![devDependency Status][david-dm-dev-image]][david-dm-dev-url]
 <!--[![HitCount][hit-count-image]][hit-count-url]-->
 
+This repo have been wrote some test for FrontEnd easlier to learn how to test and test with CI/CD.
+
+- Unit test
+- Functional test
+- Visual test
+- Run test on TravisCI
+
 ### Start
-#### Clone this repo
-#### Make sure you have install [nodejs][]
+#### Clone this repo & make sure you have install [nodejs][].
+#### 👇 Then run these script to setup website. 👇
 
 ```zsh
 # install dependency
@@ -23,12 +30,12 @@ $ npm start
 ```
 
 ### Table of Contents
-- [Unit Test]
-- [Functional Test]
-- [Config CI]
+- [Unit test]
+- [Functional test]
+- [Environment Variables]
 - [Compatibility]
 
-### Unit Test
+### Unit test
 ```zsh
 # test all unit test
 $ npm run test
@@ -37,7 +44,7 @@ $ npm run test
 $ npm run test::single <path/to/test-file>
 ```
 
-### Functional Test
+### Functional test
 ```zsh
 # test all functional test local (make sure website has been launch on https://localhost:3000 or run `npm start` first)
 $ npm run functional::local
@@ -49,7 +56,19 @@ $ npm run functional::online
 $ npm run functional::online:multiple
 ```
 
-### Config CI
+### Environment Variables
+```
+# for coverage badge
+- CODECOV_TOKEN
+# for visual test
+- EYES_KEY
+# for deploy github page
+- GH_REF
+- GH_TOKEN
+# for functional test on Saucelabs
+- SAUCE_ACCESS_KEY
+- SAUCE_USERNAME
+```
 
 ### Compatibility
 [![Saucelab Compatibility][compatibility-image]][compatibility-url]
@@ -82,4 +101,4 @@ $ npm run functional::online:multiple
 [Unit Test]: https://github.com/sky172839465/test-app#unit-test
 [Functional Test]: https://github.com/sky172839465/test-app#functional-test
 [Config CI]: https://github.com/sky172839465/test-app#config-ci
-[Compatibility]: https://github.com/sky172839465/test-app#compatibility
+[Environment Variables]: https://github.com/sky172839465/test-app#environment-variables
