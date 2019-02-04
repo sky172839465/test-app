@@ -16,10 +16,10 @@
 
 ```zsh
 # install dependency
-npm install
+$ npm install
 
 # launch website
-npm start
+$ npm start
 ```
 
 ### Table of Contents
@@ -31,22 +31,22 @@ npm start
 ### Unit Test
 ```zsh
 # test all unit test
-npm run test
+$ npm run test
 
 # test single unit test
-npm run test::single <path/to/test file>
+$ npm run test::single <path/to/test-file>
 ```
 
 ### Functional Test
 ```zsh
 # test all functional test local (make sure website has been launch on https://localhost:3000 or run `npm start` first)
-npm run functional::local
+$ npm run functional::local
 
 # test all functional test on saucelabs
-npm run functional::online
+$ npm run functional::online
 
 # test all functional test on saucelabs with multiple platform
-npm run functional::online:multiple
+$ npm run functional::online:multiple
 ```
 
 ### Config CI
