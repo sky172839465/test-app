@@ -10,7 +10,7 @@
 [![devDependency Status][david-dm-dev-image]][david-dm-dev-url]
 <!--[![HitCount][hit-count-image]][hit-count-url]-->
 
-This repo have been wrote some test for FrontEnd easlier to learn how to test and test with CI/CD.
+This repo have been wrote some test for front end develop easlier to learn how to test and test with CI/CD.
 
 - Unit test
 - Functional test
@@ -18,7 +18,7 @@ This repo have been wrote some test for FrontEnd easlier to learn how to test an
 - Run test on TravisCI
 
 ### Start
-#### Clone this repo & make sure you have install [nodejs][].
+#### Clone this repo & make sure you have been install [nodejs][].
 #### 👇 Then run these script to setup website. 👇
 
 ```zsh
