@@ -7,12 +7,7 @@ exports.config = {
     WebDriverIO: {
       url: 'http://localhost:3000',
       browser: 'chrome',
-      smartWait: 5000,
-      waitForTimeout: 300000,
-      timeouts: {
-        script: 100000,
-        'page load': 100000
-      }
+      waitForTimeout: 300000
     }
   },
   include: {

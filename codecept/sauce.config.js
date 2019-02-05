@@ -23,7 +23,6 @@ exports.config = {
           browser: 'safari',
           desiredCapabilities: {
             platform: 'macOS 10.14',
-            browserName: 'safari',
             ...getBrowserConfig('Mac Safari')
           }
         },
@@ -31,7 +30,6 @@ exports.config = {
           browser: 'chrome',
           desiredCapabilities: {
             platform: 'macOS 10.14',
-            browserName: 'chrome',
             ...getBrowserConfig('Mac Chrome')
           }
         }
@@ -63,20 +61,13 @@ exports.config = {
       url: BASE_URL,
       user: SAUCE_USERNAME,
       key: SAUCE_ACCESS_KEY,
+      browser: 'chrome',
       desiredCapabilities: {
         platform: 'Windows 10',
         ...getBrowserConfig('Windows Chrome')
       },
-      browser: 'chrome',
       windowSize: 'maximize',
-      waitForTimeout: 30000,
-      connectionRetryTimeout: 180000,
-      connectionRetryCount: 3,
-      smartWait: 5000,
-      timeouts: {
-        script: 10000,
-        'page load': 10000
-      }
+      waitForTimeout: 30000
     }
   },
   include: {
