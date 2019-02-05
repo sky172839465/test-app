@@ -59,6 +59,7 @@ Test functional test on saucelabs with localhost
 👉 before start the script, make sure you have been download [sauce connect]
 ```zsh
 $ npm run start::sauce_connect
+# wait for visible `Sauce Connect is up, you may start your tests.`
 $ npm run functional::online:localhost
 ```
 
