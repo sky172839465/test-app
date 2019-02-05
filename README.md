@@ -49,14 +49,16 @@ $ npm run test::single <path/to/test/file>
 
 ### Functional test
 
-Test functional test local (make sure website has been launch on https://localhost:3000 or run `npm start` first)
+Test functional test local
+
+👉 Before start the script, make sure website has been launch on https://localhost:3000 or run `npm start` first
 ```zsh
 $ npm run functional::local
 ```
 
 Test functional test on saucelabs with localhost
 
-👉 before start the script, make sure you have been download [sauce connect]
+👉 Before start the script, make sure you have been download [sauce connect], and extract sc file to `bin/sc`
 ```zsh
 $ npm run start::sauce_connect
 # wait for visible `Sauce Connect is up, you may start your tests.`
