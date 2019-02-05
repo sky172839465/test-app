@@ -14,7 +14,6 @@ const Acct = new SauceLabs({
 class SauceHelper extends Helper {
   _updateSauceJob (sessionId, data) {
     const sauceUrl = `⚡️ Test finished. Link to job: https://saucelabs.com/jobs/${sessionId} ⚡️\n\n`
-    console.log(JSON.stringify(data, null, 2))
     console.log(sauceUrl)
     Acct.updateJob(sessionId, {...data, public: 'public'}, this._callback)
   }

@@ -22,16 +22,16 @@ exports.config = {
         {
           browser: 'safari',
           desiredCapabilities: {
-            os: 'OS X',
-            os_version: 'High Sierra',
+            platform: 'macOS 10.14',
+            browserName: 'safari',
             ...getBrowserConfig('Mac Safari')
           }
         },
         {
           browser: 'chrome',
           desiredCapabilities: {
-            os: 'OS X',
-            os_version: 'High Sierra',
+            platform: 'macOS 10.14',
+            browserName: 'chrome',
             ...getBrowserConfig('Mac Chrome')
           }
         }
@@ -44,6 +44,13 @@ exports.config = {
           desiredCapabilities: {
             platform: 'Windows 10',
             ...getBrowserConfig('Windows Chrome')
+          }
+        },
+        {
+          browser: 'firefox',
+          desiredCapabilities: {
+            platform: 'Windows 10',
+            ...getBrowserConfig('Windows FireFox')
           }
         }
       ]
