@@ -36,39 +36,49 @@ $ npm start
 - [Compatibility]
 
 ### Unit test
-```zsh
-# test all unit test
-$ npm run test
 
-# test single unit test
-$ npm run test::single <path/to/test-file>
+Test all unit test
+```zsh
+$ npm run test
+```
+
+Test single unit test
+```zsh
+$ npm run test::single <path/to/test/file>
 ```
 
 ### Functional test
+
+Test functional test local (make sure website has been launch on https://localhost:3000 or run `npm start` first)
 ```zsh
-# test all functional test local (make sure website has been launch on https://localhost:3000 or run `npm start` first)
 $ npm run functional::local
+```
 
-# test all functional test on saucelabs
+Test functional test on saucelabs with localhost
+
+👉 before start the script, make sure you have been download [sauce connect]
+```zsh
+$ npm run start::sauce_connect
+$ npm run functional::online:localhost
+```
+
+Test all functional test on saucelabs
+```zsh
 $ npm run functional::online
+```
 
-# test all functional test on saucelabs with multiple platform
+Test all functional test on saucelabs with multiple platform
+```zsh
 $ npm run functional::online:multiple
 ```
 
 ### Environment Variables
-```
-# for coverage badge
-- CODECOV_TOKEN
-# for visual test
-- EYES_KEY
-# for deploy github page
-- GH_REF
-- GH_TOKEN
-# for functional test on Saucelabs
-- SAUCE_ACCESS_KEY
-- SAUCE_USERNAME
-```
+
+
+- `CODECOV_TOKEN`: Use for coverage badge
+- `EYES_KEY`: Use for visual test
+- `GH_REF`, `GH_TOKEN`: Use for deploy github page
+- `SAUCE_ACCESS_KEY`, `SAUCE_USERNAME`: Use for functional test on Saucelabs
 
 ### Compatibility
 [![Saucelab Compatibility][compatibility-image]][compatibility-url]
@@ -102,3 +112,6 @@ $ npm run functional::online:multiple
 [Functional Test]: https://github.com/sky172839465/test-app#functional-test
 [Environment Variables]: https://github.com/sky172839465/test-app#environment-variables
 [Compatibility]: https://github.com/sky172839465/test-app#compatibility
+
+<!-- Functional Test -->
+[sauce connect]: https://wiki.saucelabs.com/display/DOCS/Basic+Sauce+Connect+Proxy+Setup#BasicSauceConnectProxySetup-SettingUpSauceConnect
