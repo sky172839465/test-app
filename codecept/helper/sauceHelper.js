@@ -1,6 +1,7 @@
 const codecept = require('codeceptjs')
 const Helper = codecept.helper
 const SauceLabs = require('saucelabs')
+const _ = require('lodash')
 const {
   SAUCE_USERNAME,
   SAUCE_ACCESS_KEY
@@ -14,8 +15,17 @@ const Acct = new SauceLabs({
 class SauceHelper extends Helper {
   _updateSauceJob (sessionId, data) {
     const sauceUrl = `⚡️ Test finished. Link to job: https://saucelabs.com/jobs/${sessionId} ⚡️\n\n`
+    const {
+      platform = '',
+      browserName = ''
+    } = this.helpers['WebDriverIO'].browser
+    const newData = {
+      ...data,
+      name: `(${platform}:${browserName}) ${data.name}`,
+      public: 'public'
+    }
     console.log(sauceUrl)
-    Acct.updateJob(sessionId, {...data, public: 'public'}, this._callback)
+    Acct.updateJob(sessionId, newData, this._callback)
   }
 
   _callback (error, response, body) {
