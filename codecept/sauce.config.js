@@ -3,13 +3,12 @@ const {
   SAUCE_USERNAME,
   SAUCE_ACCESS_KEY,
   BASE_URL,
-  TRAVIS_BUILD_NUMBER,
   TRAVIS_JOB_NUMBER
 } = require('./commonData')
 const getBrowserConfig = browserName => ({
   'tunnel-identifier': TRAVIS_JOB_NUMBER,
   name: PROJECT_NAME,
-  build: `${PROJECT_NAME} in ${browserName} ${TRAVIS_BUILD_NUMBER} ${TRAVIS_JOB_NUMBER}`
+  build: `build-${TRAVIS_JOB_NUMBER}`
 })
 
 exports.config = {
