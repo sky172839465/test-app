@@ -79,7 +79,7 @@ $ npm run functional::online:multiple
 [fossa-status-url]: https://app.fossa.io/projects/git%2Bgithub.com%2Fsky172839465%2Ftest-app?ref=badge_shield
 [travis-image]: https://img.shields.io/travis/sky172839465/test-app.svg
 [travis-url]: https://travis-ci.org/sky172839465/test-app
-[sauce-labs-status-image]: https://saucelabs.com/buildstatus/sky810684
+[sauce-labs-status-image]: https://saucelabs.com/buildstatus/sky810684?auth=2ba1bc713e96348bdc016376a5c28b9c
 [sauce-labs-status-url]: https://saucelabs.com/u/sky810684
 [codecov-image]: https://img.shields.io/codecov/c/github/sky172839465/test-app.svg
 [codecov-url]: https://codecov.io/gh/sky172839465/test-app
