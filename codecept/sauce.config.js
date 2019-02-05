@@ -70,6 +70,8 @@ exports.config = {
       browser: 'chrome',
       windowSize: 'maximize',
       waitForTimeout: 30000,
+      connectionRetryTimeout: 180000,
+      connectionRetryCount: 3,
       smartWait: 5000,
       timeouts: {
         script: 10000,
