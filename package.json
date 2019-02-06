@@ -2,13 +2,12 @@
   "name": "test-app",
   "homepage": "https://sky172839465.github.io/test-app/",
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "bulma": "^0.7.2",
     "classnames": "^2.2.6",
     "lodash": "^4.17.11",
-    "react": "16.6.3",
-    "react-dom": "16.6.3",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
     "react-loadable": "^5.5.0",
     "react-router-dom": "^4.3.1",
     "react-scripts": "^2.1.3"
@@ -26,7 +25,6 @@
     "start:selenium": "selenium-standalone start > /dev/null 2>&1 &",
     "kill:selenium": "lsof -t -i :4444 | xargs kill",
     "deploy::prod": "npm run build && gh-pages -d build && npm run delete::build",
-    "delete::build": "rm -r build",
     "eject": "react-scripts eject",
     "lint": "if standard --fix | snazzy; then echo '💯 Lint perfect'; else echo '⁉️ Lint get error please run `npm run lint` check again';exit 1; fi"
   },
@@ -48,7 +46,6 @@
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
     "enzyme-to-json": "^3.3.5",
-    "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0",
     "saucelabs": "^1.5.0",
     "selenium-standalone": "^6.15.4",
@@ -59,12 +56,6 @@
   "jest": {
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
-    ],
-    "collectCoverageFrom": [
-      "src/**/*.js",
-      "!src/__tests__/**/*",
-      "!src/__e2e__/**/*",
-      "!src/(App|index|serviceWorker|setupTests).js"
     ],
     "coverageReporters": [
       "text",
