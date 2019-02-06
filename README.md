@@ -12,6 +12,7 @@
 
 This repo have been wrote some test for front end develop easlier to learn how to test and test with CI/CD.
 
+- Lint test
 - Unit test
 - Functional test
 - Visual test
@@ -30,10 +31,16 @@ $ npm start
 ```
 
 ### Table of Contents
+- [Lint test]
 - [Unit test]
 - [Functional test]
 - [Environment Variables]
 - [Compatibility]
+
+### Lint test
+```zsh
+$ npm run lint
+```
 
 ### Unit test
 
@@ -48,6 +55,8 @@ $ npm run test::single <path/to/test/file>
 ```
 
 ### Functional test
+
+👉 [[Issue][]]: No Java runtime present 👈  Please follow the link install Java.
 
 Test functional test local
 
@@ -111,10 +120,12 @@ $ npm run functional::online:multiple
 [nodejs]: https://nodejs.org
 
 <!-- table of contents -->
+[Lint test]: https://github.com/sky172839465/test-app#lint-test
 [Unit Test]: https://github.com/sky172839465/test-app#unit-test
 [Functional Test]: https://github.com/sky172839465/test-app#functional-test
 [Environment Variables]: https://github.com/sky172839465/test-app#environment-variables
 [Compatibility]: https://github.com/sky172839465/test-app#compatibility
 
 <!-- Functional Test -->
+[Issue]: https://github.com/vvo/selenium-standalone/issues/140#issuecomment-151254279
 [sauce connect]: https://wiki.saucelabs.com/display/DOCS/Basic+Sauce+Connect+Proxy+Setup#BasicSauceConnectProxySetup-SettingUpSauceConnect
