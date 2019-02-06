@@ -12,8 +12,7 @@ script:
   - echo "npm test temporarily disabled"
   - npm run lint
   - npm run test && codecov
-  - npm run build
-  - bash ./ghpage-deploy.sh
+  - npm run deploy::prod
   - npm run functional::online:multiple
 true:
   branch: master

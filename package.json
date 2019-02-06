@@ -24,7 +24,7 @@
     "start::sauce_connect": "bin/sc -u $SAUCE_USERNAME -k $SAUCE_ACCESS_KEY",
     "start:selenium": "selenium-standalone start > /dev/null 2>&1 &",
     "kill:selenium": "lsof -t -i :4444 | xargs kill",
-    "deploy::prod": "npm run build && gh-pages -d build && npm run delete::build",
+    "deploy::prod": "npm run build && bash ./ghpage-deploy.sh",
     "eject": "react-scripts eject",
     "lint": "if standard --fix | snazzy; then echo '💯 Lint perfect'; else echo '⁉️ Lint get error please run `npm run lint` check again';exit 1; fi"
   },

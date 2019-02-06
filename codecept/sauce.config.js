@@ -8,7 +8,7 @@ const {
 const getBrowserConfig = browserName => ({
   'tunnel-identifier': TRAVIS_JOB_NUMBER,
   name: PROJECT_NAME,
-  build: `build-${TRAVIS_JOB_NUMBER}`
+  build: TRAVIS_JOB_NUMBER ? `build-${TRAVIS_JOB_NUMBER}` : `local-${Date.now()}`
 })
 
 exports.config = {

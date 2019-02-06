@@ -1,7 +1,6 @@
 const codecept = require('codeceptjs')
 const Helper = codecept.helper
 const SauceLabs = require('saucelabs')
-const _ = require('lodash')
 const {
   SAUCE_USERNAME,
   SAUCE_ACCESS_KEY
@@ -47,16 +46,10 @@ class SauceHelper extends Helper {
   }
 
   _getSessionId () {
-    if (this.helpers['WebDriver']) {
-      return this.helpers['WebDriver'].browser.sessionId
-    }
-    if (this.helpers['Appium']) {
-      return this.helpers['Appium'].browser.sessionId
-    }
     if (this.helpers['WebDriverIO']) {
       return this.helpers['WebDriverIO'].browser.requestHandler.sessionID
     }
-    throw new Error('No matching helper found. Supported helpers: WebDriver/Appium/WebDriverIO')
+    throw new Error('No matching helper found. Supported helpers: WebDriverIO')
   }
 }
 
