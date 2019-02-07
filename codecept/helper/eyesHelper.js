@@ -3,8 +3,7 @@ const { Eyes, Target } = require('@applitools/eyes.webdriverio')
 const Helper = codecept.helper
 const {
   EYES_KEY,
-  PROJECT_NAME,
-  WINDOW_SIZE
+  PROJECT_NAME
 } = require('../commonData')
 
 class EyesHelper extends Helper {
@@ -56,8 +55,7 @@ class EyesHelper extends Helper {
       await this.eyes.open(
         this.browser,
         appName,
-        PROJECT_NAME,
-        WINDOW_SIZE
+        PROJECT_NAME
       )
       this.isEyesOpen = true
       this.isNewTest = false
