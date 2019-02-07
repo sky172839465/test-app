@@ -42,11 +42,13 @@ $ npm start
 5. Set environment variables on [Travis CI][]
   - [CODECOV_TOKEN][]: Use for coverage badge
   - [EYES_KEY][]: Use for visual test
-  - [GH_REF][], [GH_TOKEN][]: Use for deploy github page, GH_REF is `github.com/<YOUR_GITHUB_ACCOUNT>/test-app.git`
+  - GH_REF, [GH_TOKEN][]: Use for deploy github page, `GH_REF` is `github.com/<YOUR_GITHUB_ACCOUNT>/test-app.git`
   - [SAUCE_ACCESS_KEY][], [SAUCE_USERNAME][]: Use for functional test on Saucelabs
   ![Env Variables][env-var-image]
 6. `Push` a commit to master branch, it will trigger Travis CI to build you CI!
-  
+  ![Build Start][build-start-image]
+  ![Build Passed][build-passed-image]
+
 
 ### Table of Contents
 - [Lint test]
@@ -135,6 +137,8 @@ $ npm run functional::online:multiple
 [GH_TOKEN]: https://github.com/settings/tokens
 [SAUCE_ACCESS_KEY]: https://saucelabs.com/
 [SAUCE_USERNAME]: https://saucelabs.com/
+[build-start-image]: https://user-images.githubusercontent.com/9082423/52386407-f3918b00-2ac0-11e9-821a-4f0123cd0d85.png
+[build-passed-image]: https://user-images.githubusercontent.com/9082423/52386440-22a7fc80-2ac1-11e9-97dd-b81cb975085a.png
 
 <!-- table of contents -->
 [Lint test]: https://github.com/sky172839465/test-app#lint-test

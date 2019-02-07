@@ -10,6 +10,7 @@ const {
   TRAVIS_BUILD_NUMBER = `local ${startDate} ${startTime}`,
   TRAVIS_JOB_NUMBER = ''
 } = process.env
+const WINDOW_SIZE = '1024x768'
 
 module.exports = {
   PROJECT_NAME,
@@ -18,5 +19,6 @@ module.exports = {
   EYES_KEY,
   BASE_URL,
   TRAVIS_BUILD_NUMBER,
-  TRAVIS_JOB_NUMBER
+  TRAVIS_JOB_NUMBER,
+  WINDOW_SIZE
 }
