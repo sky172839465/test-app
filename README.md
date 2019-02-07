@@ -18,23 +18,40 @@ This repo have been wrote some test for front end develop easlier to learn how t
 - Visual test
 - Run test on TravisCI
 
-### Start
-#### Clone this repo & make sure you have been install [nodejs][].
-#### 👇 Then run these script to setup website. 👇
+### Quick Start
+1. `Fork` this repo & make sure you have been install [nodejs][].
+2. `clone` repo from your account
+```zsh
+$ git clone https://github.com/<YOUR_GITHUB_ACCOUNT>/test-app.git
+```
+3. Then run these script to setup website. 👇
 
 ```zsh
+# move to test-app dir
+$ cd test-app
+
 # install dependency
 $ npm install
 
 # launch website
 $ npm start
 ```
+3. Sign in [Travis CI][] with github account
+4. Open `test-app` from `Repositories`
+  ![Launch Travis CI][launch-image]
+5. Set environment variables on [Travis CI][]
+  - [CODECOV_TOKEN][]: Use for coverage badge
+  - [EYES_KEY][]: Use for visual test
+  - [GH_REF][], [GH_TOKEN][]: Use for deploy github page, GH_REF is `github.com/<YOUR_GITHUB_ACCOUNT>/test-app.git`
+  - [SAUCE_ACCESS_KEY][], [SAUCE_USERNAME][]: Use for functional test on Saucelabs
+  ![Env Variables][env-var-image]
+6. `Push` a commit to master branch, it will trigger Travis CI to build you CI!
+  
 
 ### Table of Contents
 - [Lint test]
 - [Unit test]
 - [Functional test]
-- [Environment Variables]
 - [Compatibility]
 
 ### Lint test
@@ -84,14 +101,6 @@ Test all functional test on saucelabs with multiple platform
 $ npm run functional::online:multiple
 ```
 
-### Environment Variables
-
-
-- `CODECOV_TOKEN`: Use for coverage badge
-- `EYES_KEY`: Use for visual test
-- `GH_REF`, `GH_TOKEN`: Use for deploy github page
-- `SAUCE_ACCESS_KEY`, `SAUCE_USERNAME`: Use for functional test on Saucelabs
-
 ### Compatibility
 [![Saucelab Compatibility][compatibility-image]][compatibility-url]
 
@@ -118,6 +127,14 @@ $ npm run functional::online:multiple
 
 <!-- install -->
 [nodejs]: https://nodejs.org
+[Travis CI]: https://travis-ci.org/
+[launch-image]: https://user-images.githubusercontent.com/9082423/52385822-50d80d00-2abe-11e9-97ce-acf44ac642f3.png
+[env-var-image]: https://user-images.githubusercontent.com/9082423/52385867-8250d880-2abe-11e9-9a5f-613d8ac5cc89.png
+[CODECOV_TOKEN]: https://codecov.io
+[EYES_KEY]: https://applitools.com
+[GH_TOKEN]: https://github.com/settings/tokens
+[SAUCE_ACCESS_KEY]: https://saucelabs.com/
+[SAUCE_USERNAME]: https://saucelabs.com/
 
 <!-- table of contents -->
 [Lint test]: https://github.com/sky172839465/test-app#lint-test

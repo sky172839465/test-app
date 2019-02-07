@@ -16,24 +16,24 @@ exports.config = {
   tests: '../src/__e2e__/src/**/**.js',
   output: '../report',
   multiple: {
-    mac: {
-      browsers: [
-        {
-          browser: 'safari',
-          desiredCapabilities: {
-            platform: 'macOS 10.13',
-            ...getBrowserConfig('Mac Safari')
-          }
-        },
-        {
-          browser: 'chrome',
-          desiredCapabilities: {
-            platform: 'macOS 10.13',
-            ...getBrowserConfig('Mac Chrome')
-          }
-        }
-      ]
-    },
+    // mac: {
+    //   browsers: [
+    //     {
+    //       browser: 'safari',
+    //       desiredCapabilities: {
+    //         platform: 'macOS 10.13',
+    //         ...getBrowserConfig('Mac Safari')
+    //       }
+    //     },
+    //     {
+    //       browser: 'chrome',
+    //       desiredCapabilities: {
+    //         platform: 'macOS 10.13',
+    //         ...getBrowserConfig('Mac Chrome')
+    //       }
+    //     }
+    //   ]
+    // },
     windows: {
       browsers: [
         {
