@@ -10,7 +10,7 @@ const {
   TRAVIS_BUILD_NUMBER = `local ${startDate} ${startTime}`,
   TRAVIS_JOB_NUMBER = ''
 } = process.env
-const WINDOW_SIZE = '1024x768'
+const WINDOW_SIZE = '1024x1000'
 
 module.exports = {
   PROJECT_NAME,
