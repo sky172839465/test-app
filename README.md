@@ -138,6 +138,7 @@ $ npm run functional::online:multiple
 
 Cross-browser Testing Platform and Open Source <3 Provided by [Sauce Labs][sauce-homepage]
 
+![Sauce Logo][saucec-logo]
 
 <!-- badge -->
 [fossa-status-image]: https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsky172839465%2Ftest-app.svg?type=shield
@@ -205,3 +206,6 @@ Cross-browser Testing Platform and Open Source <3 Provided by [Sauce Labs][sauce
 
 <!-- big thanks -->
 [sauce-homepage]: https://saucelabs.com
+[saucec-logo]: https://user-images.githubusercontent.com/9082423/53340347-c6a7f980-3943-11e9-8424-77ce890942fd.png
+
+
