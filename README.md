@@ -6,11 +6,15 @@
 [![Coverage Status][codecov-image]][codecov-url]
 [![JavaScript Style Guide][standard-image]][standard-url]  
 
+<!--
 [![Dependency Status][david-dm-image]][david-dm-url]
 [![devDependency Status][david-dm-dev-image]][david-dm-dev-url]
-<!--[![HitCount][hit-count-image]][hit-count-url]-->
+[![HitCount][hit-count-image]][hit-count-url]
+-->
 
 This repo have been wrote some test for front end develop easlier to learn how to test and test with CI/CD.
+
+👉👉👉 You can get full tutorial about how to start this project from zero on [medium][].
 
 - Lint test
 - Unit test
@@ -130,14 +134,18 @@ $ npm run functional::online:multiple
 ### Compatibility
 [![Saucelab Compatibility][compatibility-image]][compatibility-url]
 
+### Big Thanks
+
+Cross-browser Testing Platform and Open Source <3 Provided by [Sauce Labs][sauce-homepage]
+
 
 <!-- badge -->
 [fossa-status-image]: https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsky172839465%2Ftest-app.svg?type=shield
 [fossa-status-url]: https://app.fossa.io/projects/git%2Bgithub.com%2Fsky172839465%2Ftest-app?ref=badge_shield
 [travis-image]: https://img.shields.io/travis/sky172839465/test-app.svg
 [travis-url]: https://travis-ci.org/sky172839465/test-app
-[sauce-labs-status-image]: https://saucelabs.com/buildstatus/sky810684?auth=2ba1bc713e96348bdc016376a5c28b9c
-[sauce-labs-status-url]: https://saucelabs.com/u/sky810684
+[sauce-labs-status-image]: https://saucelabs.com/buildstatus/sky172839465
+[sauce-labs-status-url]: https://saucelabs.com/u/sky172839465
 [codecov-image]: https://img.shields.io/codecov/c/github/sky172839465/test-app.svg
 [codecov-url]: https://codecov.io/gh/sky172839465/test-app
 [standard-image]: https://img.shields.io/badge/code_style-standard-brightgreen.svg
@@ -148,8 +156,11 @@ $ npm run functional::online:multiple
 [david-dm-dev-url]: https://david-dm.org/sky172839465/test-app#info=devDependencies
 [hit-count-image]: http://hits.dwyl.io/sky172839465/test-app.svg
 [hit-count-url]: http://hits.dwyl.io/sky172839465/test-app
-[compatibility-image]: https://saucelabs.com/browser-matrix/sky810684.svg
-[compatibility-url]: https://saucelabs.com/u/sky810684
+[compatibility-image]: https://saucelabs.com/browser-matrix/sky172839465.svg
+[compatibility-url]: https://saucelabs.com/u/sky172839465
+
+<!-- post -->
+[medium]: https://medium.com/@sky172839465/9735f622ae68
 
 <!-- install -->
 [nodejs]: https://nodejs.org
@@ -191,3 +202,6 @@ $ npm run functional::online:multiple
 <!-- Functional Test -->
 [Issue]: https://github.com/vvo/selenium-standalone/issues/140#issuecomment-151254279
 [sauce connect]: https://wiki.saucelabs.com/display/DOCS/Basic+Sauce+Connect+Proxy+Setup#BasicSauceConnectProxySetup-SettingUpSauceConnect
+
+<!-- big thanks -->
+[sauce-homepage]: https://saucelabs.com
