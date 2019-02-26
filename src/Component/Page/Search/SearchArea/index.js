@@ -20,8 +20,8 @@ const SearchArea = (props) => {
             name='userName'
             className={clx(
               'input is-fullwidth',
-              {'is-primary': !isEmptyUserName},
-              {'is-danger': isEmptyUserName}
+              { 'is-primary': !isEmptyUserName },
+              { 'is-danger': isEmptyUserName }
             )}
             placeholder='Find user'
             onChange={onUserNameChange}
@@ -40,7 +40,7 @@ const SearchArea = (props) => {
             type='submit'
             className={clx(
               'button is-primary is-outlined',
-              {'is-loading': isLoading}
+              { 'is-loading': isLoading }
             )}
             disabled={isEmptyUserName}
           >

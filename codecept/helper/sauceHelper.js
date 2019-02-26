@@ -36,13 +36,13 @@ class SauceHelper extends Helper {
   _passed (test) {
     console.log('Test has Passed')
     const sessionId = this._getSessionId()
-    this._updateSauceJob(sessionId, {'passed': true, 'name': test.title})
+    this._updateSauceJob(sessionId, { 'passed': true, 'name': test.title })
   }
 
   _failed (test, error) {
     console.log('Test has failed')
     const sessionId = this._getSessionId()
-    this._updateSauceJob(sessionId, {'passed': false, 'name': test.title})
+    this._updateSauceJob(sessionId, { 'passed': false, 'name': test.title })
   }
 
   _getSessionId () {

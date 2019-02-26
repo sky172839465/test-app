@@ -1,6 +1,6 @@
 import React from 'react'
 
-const NotFound = ({message = 'Oops! Not found page.'}) => {
+const NotFound = ({ message = 'Oops! Not found page.' }) => {
   return (
     <div
       data-role='not-found'

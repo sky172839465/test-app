@@ -1,7 +1,7 @@
 import React from 'react'
 
 const RepoCard = (props) => {
-  const {repo = {}} = props
+  const { repo = {} } = props
   const {
     name,
     description,

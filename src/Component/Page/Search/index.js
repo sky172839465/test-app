@@ -1,8 +1,8 @@
-import React, {Component} from 'react'
-import {withRouter} from 'react-router-dom'
+import React, { Component } from 'react'
+import { withRouter } from 'react-router-dom'
 import clx from 'classnames'
 import _ from 'lodash'
-import {API_END_POINT} from '../../../constant'
+import { API_END_POINT } from '../../../constant'
 import SearchArea from './SearchArea'
 import RepoCard from './RepoCard'
 import ResultNotFound from '../../Common/ResultNotFound'
@@ -18,23 +18,23 @@ class Search extends Component {
   }
 
   componentDidMount () {
-    const {location} = this.props
+    const { location } = this.props
     const params = new URLSearchParams(_.get(location, 'search', ''))
     const defaultUserName = params.get('userName') || ''
     this.setState(
-      () => ({userName: defaultUserName}),
+      () => ({ userName: defaultUserName }),
       () => !_.isEmpty(defaultUserName) && this.submitForm()
     )
   }
 
   submitForm = (event) => {
-    const {history, location} = this.props
-    const {userName} = this.state
+    const { history, location } = this.props
+    const { userName } = this.state
     if (event) {
       event.preventDefault()
       history.push({
         pathname: _.get(location, 'pathname', ''),
-        search: `?${_.toString(new URLSearchParams({userName}))}`
+        search: `?${_.toString(new URLSearchParams({ userName }))}`
       })
     }
     this.setState({
@@ -62,7 +62,7 @@ class Search extends Component {
       })
   }
 
-  onUserNameChange = e => this.setState({userName: e.target.value})
+  onUserNameChange = e => this.setState({ userName: e.target.value })
 
   render () {
     const {
@@ -83,7 +83,7 @@ class Search extends Component {
     }
     const resultNotFoundProps = {
       className: '',
-      onDelete: () => this.setState({message: ''})
+      onDelete: () => this.setState({ message: '' })
     }
     return (
       <React.Fragment>
