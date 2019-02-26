@@ -26,7 +26,7 @@
     "kill:selenium": "lsof -t -i :4444 | xargs kill",
     "deploy::prod": "npm run build && if bash ./ghpage-deploy.sh; then echo '🤗 Deploy success'; else echo '😱 Deploy failure'; exit 1; fi",
     "eject": "react-scripts eject",
-    "lint": "if standard --fix | snazzy; then echo '💯 Lint perfect'; else echo '⁉️ Lint get error please run `npm run lint` check again';exit 1; fi"
+    "lint": "if standard | snazzy; then echo '💯 Lint perfect'; else echo '⁉️ Lint get error please run `npm run lint` check again';exit 1; fi"
   },
   "eslintConfig": {
     "extends": "react-app"
