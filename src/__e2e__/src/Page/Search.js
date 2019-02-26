@@ -36,9 +36,9 @@ Scenario('page with userName param', (I) => {
 Scenario('page search not exist user', (I) => {
   I.amOnPage(route)
   I.waitForVisible(userNameInput)
-  I.screenShotForVisualTest()
+  // I.screenShotForVisualTest()
   I.fillField(userNameInput, USER_NAME.NOT_EXIST)
-  I.screenShotForVisualTest()
+  // I.screenShotForVisualTest()
   I.click(searchBtn)
   I.waitForVisible(notification)
 })

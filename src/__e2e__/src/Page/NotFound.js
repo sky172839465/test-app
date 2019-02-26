@@ -12,5 +12,5 @@ Scenario('default page', async (I) => {
   I.see('Test App', brandLink)
   I.seeElement(notFound)
   I.see('Oops! Not found page.', notFound)
-  I.screenShotForVisualTest()
+  // I.screenShotForVisualTest()
 })
