@@ -161,7 +161,7 @@ Cross-browser Testing Platform and Open Source <3 Provided by [Sauce Labs][sauce
 [compatibility-url]: https://saucelabs.com/u/sky172839465
 
 <!-- post -->
-[medium]: https://medium.com/@sky172839465/9735f622ae68
+[medium]: https://medium.com/yusong-blog/9735f622ae68
 
 <!-- install -->
 [nodejs]: https://nodejs.org
