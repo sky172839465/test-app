@@ -56,7 +56,7 @@ exports.config = {
   },
   helpers: {
     SauceHelper: { require: './helper/sauceHelper.js' },
-    EyesHelper: { require: './helper/eyesHelper.js' },
+    // EyesHelper: { require: './helper/eyesHelper.js' },
     WebDriverIO: {
       url: BASE_URL,
       user: SAUCE_USERNAME,

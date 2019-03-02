@@ -15,9 +15,9 @@ class SauceHelper extends Helper {
   _updateSauceJob (sessionId, data) {
     const sauceUrl = `⚡️ Test finished. Link to job: https://saucelabs.com/jobs/${sessionId} ⚡️\n\n`
     const {
-      platform = '',
-      browserName = ''
-    } = this.helpers['WebDriverIO'].browser
+      platform = 'unknown',
+      browserName = 'unknown'
+    } = this.helpers['WebDriverIO'].browser.desiredCapabilities
     const newData = {
       ...data,
       name: `(${platform}:${browserName}) ${data.name}`,
