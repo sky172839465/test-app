@@ -37,6 +37,9 @@ $ cd test-app
 # install dependency
 $ npm install
 
+# install selenium dependency
+$ npm run install:selenium
+
 # launch website
 $ npm start
 ```
