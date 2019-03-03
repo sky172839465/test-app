@@ -22,6 +22,7 @@
     "functional::online:multiple": "if codeceptjs run-multiple --all --steps --config=./codecept/sauce.config.js; then echo '🎊 Functional test run success'; else echo '💔 Functional test run failure'; exit 1; fi",
     "functional::online:localhost": "export BASE_URL=http://localhost:3000/; npm run functional::online",
     "start::sauce_connect": "bin/sc -u $SAUCE_USERNAME -k $SAUCE_ACCESS_KEY",
+    "install:selenium": "selenium-standalone install",
     "start:selenium": "selenium-standalone start > /dev/null 2>&1 &",
     "kill:selenium": "lsof -t -i :4444 | xargs kill",
     "deploy::prod": "npm run build && if bash ./ghpage-deploy.sh; then echo '🤗 Deploy success'; else echo '😱 Deploy failure'; exit 1; fi",
