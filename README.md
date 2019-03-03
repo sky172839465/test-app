@@ -37,9 +37,6 @@ $ cd test-app
 # install dependency
 $ npm install
 
-# install selenium dependency
-$ npm run install:selenium
-
 # launch website
 $ npm start
 ```
@@ -111,6 +108,8 @@ $ npm run test::single <path/to/test/file>
 Test functional test local
 
 👉 Before start the script, make sure website has been launch on https://localhost:3000 or run `npm start` first
+
+👉 First time run this script, please run `npm run install:selenium` install selenium dependency first.
 ```zsh
 $ npm run functional::local
 ```
