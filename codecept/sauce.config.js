@@ -7,7 +7,7 @@ const {
   WINDOW_SIZE
 } = require('./commonData')
 const getBrowserConfig = browserName => ({
-  'tunnel-identifier': TRAVIS_JOB_NUMBER,
+  'tunnel-identifier': TRAVIS_JOB_NUMBER || 'local-tunnel',
   name: PROJECT_NAME,
   build: TRAVIS_JOB_NUMBER ? `build-${TRAVIS_JOB_NUMBER}` : `local-${Date.now()}`
 })
