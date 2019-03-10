@@ -147,7 +147,7 @@ Cross-browser Testing Platform and Open Source <3 Provided by [Sauce Labs][sauce
 [fossa-status-url]: https://app.fossa.io/projects/git%2Bgithub.com%2Fsky172839465%2Ftest-app?ref=badge_shield
 [travis-image]: https://img.shields.io/travis/sky172839465/test-app.svg
 [travis-url]: https://travis-ci.org/sky172839465/test-app
-[sauce-labs-status-image]: https://saucelabs.com/buildstatus/sky172839465
+[sauce-labs-status-image]: https://saucelabs.com/buildstatus/test-app
 [sauce-labs-status-url]: https://saucelabs.com/u/sky172839465
 [codecov-image]: https://img.shields.io/codecov/c/github/sky172839465/test-app.svg
 [codecov-url]: https://codecov.io/gh/sky172839465/test-app
@@ -159,8 +159,8 @@ Cross-browser Testing Platform and Open Source <3 Provided by [Sauce Labs][sauce
 [david-dm-dev-url]: https://david-dm.org/sky172839465/test-app#info=devDependencies
 [hit-count-image]: http://hits.dwyl.io/sky172839465/test-app.svg
 [hit-count-url]: http://hits.dwyl.io/sky172839465/test-app
-[compatibility-image]: https://saucelabs.com/browser-matrix/sky172839465.svg
-[compatibility-url]: https://saucelabs.com/u/sky172839465
+[compatibility-image]: https://saucelabs.com/browser-matrix/test-app.svg
+[compatibility-url]: https://saucelabs.com/u/test-app
 
 <!-- post -->
 [medium]: https://medium.com/yusong-blog/9735f622ae68
