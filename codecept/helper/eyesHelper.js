@@ -1,12 +1,11 @@
-const codecept = require('codeceptjs')
+const CommonHelper = require('./commonHelper')
 const { Eyes, Target } = require('@applitools/eyes.webdriverio')
-const Helper = codecept.helper
 const {
   EYES_KEY,
   PROJECT_NAME
 } = require('../commonData')
 
-class EyesHelper extends Helper {
+class EyesHelper extends CommonHelper {
   constructor (config) {
     super(config)
     this.eyes = new Eyes()
@@ -17,10 +16,6 @@ class EyesHelper extends Helper {
     this.isNewTest = true
     this.isEyesOpen = false
     this.step = 0
-  }
-
-  _getBrowser () {
-    return this.helpers['WebDriverIO'].browser
   }
 
   _beforeSuite ({ title }) {

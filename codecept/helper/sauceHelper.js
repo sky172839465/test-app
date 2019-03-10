@@ -1,5 +1,4 @@
-const codecept = require('codeceptjs')
-const Helper = codecept.helper
+const CommonHelper = require('./commonHelper')
 const SauceLabs = require('saucelabs')
 const {
   SAUCE_USERNAME,
@@ -11,16 +10,17 @@ const Acct = new SauceLabs({
 })
 
 // https://github.com/puneet0191/codeceptjs-saucehelpe
-class SauceHelper extends Helper {
+class SauceHelper extends CommonHelper {
   _updateSauceJob (sessionId, data) {
     const sauceUrl = `⚡️ Test finished. Link to job: https://saucelabs.com/jobs/${sessionId} ⚡️\n\n`
     const {
       platform = 'unknown',
+      version = 'unknown',
       browserName = 'unknown'
-    } = this.helpers['WebDriverIO'].browser.desiredCapabilities
+    } = this.helpers['WebDriver'].browser.capabilities
     const newData = {
       ...data,
-      name: `(${platform}:${browserName}) ${data.name}`,
+      name: `(${platform} v${version}:${browserName}) ${data.name}`,
       public: 'public'
     }
     console.log(sauceUrl)
@@ -43,13 +43,6 @@ class SauceHelper extends Helper {
     console.log('Test has failed')
     const sessionId = this._getSessionId()
     this._updateSauceJob(sessionId, { 'passed': false, 'name': test.title })
-  }
-
-  _getSessionId () {
-    if (this.helpers['WebDriverIO']) {
-      return this.helpers['WebDriverIO'].browser.requestHandler.sessionID
-    }
-    throw new Error('No matching helper found. Supported helpers: WebDriverIO')
   }
 }
 

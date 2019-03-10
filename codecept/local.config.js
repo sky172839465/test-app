@@ -4,7 +4,7 @@ exports.config = {
   output: '../report',
   helpers: {
     // EyesHelper: { require: './helper/eyesHelper.js' },
-    WebDriverIO: {
+    WebDriver: {
       url: 'http://localhost:3000',
       browser: 'chrome',
       waitForTimeout: 300000
