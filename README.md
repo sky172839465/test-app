@@ -148,7 +148,7 @@ Cross-browser Testing Platform and Open Source <3 Provided by [Sauce Labs][sauce
 [travis-image]: https://img.shields.io/travis/sky172839465/test-app.svg
 [travis-url]: https://travis-ci.org/sky172839465/test-app
 [sauce-labs-status-image]: https://saucelabs.com/buildstatus/test-app
-[sauce-labs-status-url]: https://saucelabs.com/u/sky172839465
+[sauce-labs-status-url]: https://saucelabs.com/u/test-app
 [codecov-image]: https://img.shields.io/codecov/c/github/sky172839465/test-app.svg
 [codecov-url]: https://codecov.io/gh/sky172839465/test-app
 [standard-image]: https://img.shields.io/badge/code_style-standard-brightgreen.svg
