@@ -22,14 +22,14 @@ exports.config = {
         {
           browser: 'safari',
           desiredCapabilities: {
-            platform: 'macOS 10.13',
+            platform: 'macOS 10.12',
             ...getBrowserConfig('Mac Safari')
           }
         },
         {
           browser: 'chrome',
           desiredCapabilities: {
-            platform: 'macOS 10.13',
+            platform: 'macOS 10.14',
             ...getBrowserConfig('Mac Chrome')
           }
         }
