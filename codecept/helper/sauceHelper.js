@@ -15,12 +15,11 @@ class SauceHelper extends CommonHelper {
     const sauceUrl = `⚡️ Test finished. Link to job: https://saucelabs.com/jobs/${sessionId} ⚡️\n\n`
     const {
       platform = 'unknown',
-      version = 'unknown',
       browserName = 'unknown'
     } = this.helpers['WebDriver'].browser.capabilities
     const newData = {
       ...data,
-      name: `(${platform} v${version}:${browserName}) ${data.name}`,
+      name: `(${platform}:${browserName}) ${data.name}`,
       public: 'public'
     }
     console.log(sauceUrl)
