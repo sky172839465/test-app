@@ -23,59 +23,63 @@ This repo have been wrote some test for front end develop easlier to learn how t
 - Run test on TravisCI
 
 ### Quick Start
-1. `Fork` this repo & make sure you have been install [nodejs][].
-2. `clone` repo from your account
-```zsh
-$ git clone https://github.com/<YOUR_GITHUB_ACCOUNT>/test-app.git
-```
-3. Then run these script to setup website. 👇
+<details>
+  <summary>CLICK ME</summary>
+  
+  1. `Fork` this repo & make sure you have been install [nodejs][].
+  2. `clone` repo from your account
+  ```zsh
+  $ git clone https://github.com/<YOUR_GITHUB_ACCOUNT>/test-app.git
+  ```
+  3. Then run these script to setup website. 👇
 
-```zsh
-# move to test-app dir
-$ cd test-app
+  ```zsh
+  # move to test-app dir
+  $ cd test-app
 
-# install dependency
-$ npm install
+  # install dependency
+  $ npm install
 
-# launch website
-$ npm start
-```
-3. Sign in [Travis CI][] with github account
-4. Open `test-app` from `Repositories`
-  ![Launch Travis CI][launch-image]
-5. Set environment variables on [Travis CI][]
-  - [CODECOV_TOKEN][]: Use for coverage badge
-    1. Signin [Codecov][]
-      [![SignIn Codecov][signin-codecov-image]][signin-codecov-url]
-    2. Accept Codecov access github account
-      ![Accept Codecov][accept-codecov-image]
-    3. Select test-app repo
-      ![Select Repo][select-repo]
-    4. Get `CODECOV_TOKEN`
-      ![Get Token][get-token]
-  - [EYES_KEY][]: Use for visual test
-    1. Signin [Applitools][]
-      ![Accept Eyes][accept-eyes]
-    2. Get `EYES_KEY`
-      ![Get Eyes Token][get-eyes-token]
-  - GH_REF, [GH_TOKEN][]: Use for deploy github page, `GH_REF` is `github.com/<YOUR_GITHUB_ACCOUNT>/test-app.git`
-    1. Go to [Personal access tokens][] page
-      ![Generator Github Token][generator-github-token]
-    2. Create `GH_TOKEN` can access repo
-      ![Create Github Token][create-github-token]
-    3. Get `GH_TOKEN`
-      ![Get Github Token][get-github-token]
-  - [SAUCE_ACCESS_KEY][], [SAUCE_USERNAME][]: Use for functional test on Saucelabs
-    1. Signin [Sauce Labs][]
-      ![Accept Sauce Labs][accept-sauce-labs]
-    2. Go to [User Settings][] page
-      ![Get Sauce Labs][get-sauce-labs-token]
-    3. Get `SAUCE_ACCESS_KEY` & `SAUCE_USERNAME`
-  - All environment variables
-    ![Env Variables][env-var-image]
-6. `Push` a commit to master branch, it will trigger Travis CI to build you CI!
-  ![Build Start][build-start-image]
-  ![Build Passed][build-passed-image]
+  # launch website
+  $ npm start
+  ```
+  3. Sign in [Travis CI][] with github account
+  4. Open `test-app` from `Repositories`
+    ![Launch Travis CI][launch-image]
+  5. Set environment variables on [Travis CI][]
+    - [CODECOV_TOKEN][]: Use for coverage badge
+      1. Signin [Codecov][]
+        [![SignIn Codecov][signin-codecov-image]][signin-codecov-url]
+      2. Accept Codecov access github account
+        ![Accept Codecov][accept-codecov-image]
+      3. Select test-app repo
+        ![Select Repo][select-repo]
+      4. Get `CODECOV_TOKEN`
+        ![Get Token][get-token]
+    - [EYES_KEY][]: Use for visual test
+      1. Signin [Applitools][]
+        ![Accept Eyes][accept-eyes]
+      2. Get `EYES_KEY`
+        ![Get Eyes Token][get-eyes-token]
+    - GH_REF, [GH_TOKEN][]: Use for deploy github page, `GH_REF` is `github.com/<YOUR_GITHUB_ACCOUNT>/test-app.git`
+      1. Go to [Personal access tokens][] page
+        ![Generator Github Token][generator-github-token]
+      2. Create `GH_TOKEN` can access repo
+        ![Create Github Token][create-github-token]
+      3. Get `GH_TOKEN`
+        ![Get Github Token][get-github-token]
+    - [SAUCE_ACCESS_KEY][], [SAUCE_USERNAME][]: Use for functional test on Saucelabs
+      1. Signin [Sauce Labs][]
+        ![Accept Sauce Labs][accept-sauce-labs]
+      2. Go to [User Settings][] page
+        ![Get Sauce Labs][get-sauce-labs-token]
+      3. Get `SAUCE_ACCESS_KEY` & `SAUCE_USERNAME`
+    - All environment variables
+      ![Env Variables][env-var-image]
+  6. `Push` a commit to master branch, it will trigger Travis CI to build you CI!
+    ![Build Start][build-start-image]
+    ![Build Passed][build-passed-image]
+</details>
 
 
 ### Table of Contents
@@ -85,53 +89,63 @@ $ npm start
 - [Compatibility]
 
 ### Lint test
-```zsh
-$ npm run lint
-```
+<details>
+  <summary>CLICK ME</summary>
+  
+  ```zsh
+  $ npm run lint
+  ```
+</details>
 
 ### Unit test
-
-Test all unit test
-```zsh
-$ npm run test
-```
-
-Test single unit test
-```zsh
-$ npm run test::single <path/to/test/file>
-```
+<details>
+  <summary>CLICK ME</summary>
+  
+  Test all unit test
+  ```zsh
+  $ npm run test
+  ```
+  
+  Test single unit test
+  ```zsh
+  $ npm run test::single <path/to/test/file>
+  ```
+</details>
 
 ### Functional test
+<details>
+  <summary>CLICK ME</summary>
+  
+  👉 [[Issue][]]: No Java runtime present 👈  Please follow the link install Java.
 
-👉 [[Issue][]]: No Java runtime present 👈  Please follow the link install Java.
+  Test functional test local
 
-Test functional test local
+  👉 Before start the script, make sure website has been launch on https://localhost:3000 or run `npm start` first
 
-👉 Before start the script, make sure website has been launch on https://localhost:3000 or run `npm start` first
+  👉 First time run this script, please run `npm run install:selenium` install selenium dependency first.
+  ```zsh
+  $ npm run functional::local
+  ```
 
-👉 First time run this script, please run `npm run install:selenium` install selenium dependency first.
-```zsh
-$ npm run functional::local
-```
+  Test functional test on saucelabs with localhost
 
-Test functional test on saucelabs with localhost
+  👉 Before start the script, make sure you have been download [sauce connect], and extract sc file to `bin/sc`
+  ```zsh
+  $ npm run start::sauce_connect
+  # wait for visible `Sauce Connect is up, you may start your tests.`
+  $ npm run functional::online:localhost
+  ```
 
-👉 Before start the script, make sure you have been download [sauce connect], and extract sc file to `bin/sc`
-```zsh
-$ npm run start::sauce_connect
-# wait for visible `Sauce Connect is up, you may start your tests.`
-$ npm run functional::online:localhost
-```
+  Test all functional test on saucelabs
+  ```zsh
+  $ npm run functional::online
+  ```
 
-Test all functional test on saucelabs
-```zsh
-$ npm run functional::online
-```
-
-Test all functional test on saucelabs with multiple platform
-```zsh
-$ npm run functional::online:multiple
-```
+  Test all functional test on saucelabs with multiple platform
+  ```zsh
+  $ npm run functional::online:multiple
+  ```
+</details>
 
 ### Compatibility
 [![Saucelab Compatibility][compatibility-image]][compatibility-url]
