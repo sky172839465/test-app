@@ -12,7 +12,7 @@
 [![HitCount][hit-count-image]][hit-count-url]
 -->
 
-This repo have been wrote some test for front end develop easlier to learn how to test and test with CI/CD.
+This repo have been wrote some test for front end develop easily to learn how to test and test with CI/CD.
 
 👉👉👉 You can get full tutorial about how to start this project from zero on [medium][].
 
