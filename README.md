@@ -1,6 +1,6 @@
 # test app
 
-[![FOSSA Status][fossa-status-image]][fossa-status-url]
+<!--[![FOSSA Status][fossa-status-image]][fossa-status-url]-->
 [![Build Status][travis-image]][travis-url]
 [![Saucelabs Ststus][sauce-labs-status-image]][sauce-labs-status-url]
 [![Coverage Status][codecov-image]][codecov-url]
