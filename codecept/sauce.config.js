@@ -43,15 +43,14 @@ exports.config = {
             platform: 'Windows 10',
             ...getBrowserConfig('Windows Chrome')
           }
-        },
-        {
-          browser: 'firefox',
-          desiredCapabilities: {
-            platform: 'Windows 10',
-            ...getBrowserConfig('Windows FireFox'),
-            version: '65.0'
-          }
         }
+        // {
+        //   browser: 'firefox',
+        //   desiredCapabilities: {
+        //     platform: 'Windows 10',
+        //     ...getBrowserConfig('Windows FireFox')
+        //   }
+        // }
       ]
     }
   },
