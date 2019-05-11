@@ -48,7 +48,8 @@ exports.config = {
           browser: 'firefox',
           desiredCapabilities: {
             platform: 'Windows 10',
-            ...getBrowserConfig('Windows FireFox')
+            ...getBrowserConfig('Windows FireFox'),
+            version: '65.0'
           }
         }
       ]
