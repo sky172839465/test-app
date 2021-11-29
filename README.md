@@ -160,7 +160,7 @@ Cross-browser Testing Platform and Open Source <3 Provided by [Sauce Labs][sauce
 [fossa-status-image]: https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsky172839465%2Ftest-app.svg?type=shield
 [fossa-status-url]: https://app.fossa.io/projects/git%2Bgithub.com%2Fsky172839465%2Ftest-app?ref=badge_shield
 [travis-image]: https://img.shields.io/travis/sky172839465/test-app.svg
-[travis-url]: https://travis-ci.com/sky172839465/test-app
+[travis-url]: https://app.travis-ci.com/sky172839465/test-app.svg?branch=master
 [sauce-labs-status-image]: https://saucelabs.com/buildstatus/test-app
 [sauce-labs-status-url]: https://saucelabs.com/u/test-app
 [codecov-image]: https://img.shields.io/codecov/c/github/sky172839465/test-app.svg
