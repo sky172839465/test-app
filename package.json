@@ -39,7 +39,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "@applitools/eyes.webdriverio": "^2.0.0",
+    "@applitools/eyes.webdriverio": "^2.18.0",
     "@types/jest": "^23.3.13",
     "@wdio/sync": "^5.7.1",
     "codeceptjs": "^2.0.7",
